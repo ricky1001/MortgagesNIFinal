@@ -1,0 +1,28 @@
+
+
+//Bootstrap All Files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//Bootstrap Changes
+@import "base/bootstrap-changes";
+
+//variables
+@import "variables/colors";
+
+//components
+@import "components/jumbo";
+@import "components/lenders-section";
+@import "components/best-buys";
+@import "components/advice";
+@import "components/modal-enquire";
+
+//Header
+@import "header/nav";
+
+//footer
+@import "footer/foot";
+
+
+//pages
+@import "pages/home";
+@import "pages/content";

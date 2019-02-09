@@ -1,0 +1,395 @@
+.process{
+    width: 100%;
+    z-index: 7;
+    position: relative;
+
+    @include media-breakpoint-down(lg){
+        margin-bottom:2rem;
+    }
+
+    @include media-breakpoint-down(sm){
+        margin-bottom:3rem;
+    }
+
+    & .row{
+        margin-right: 0px;
+    }
+
+    &-title{
+        height: 9rem;
+        background-color: $primary-purple-dark;
+        text-align: center;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 2rem;
+        padding-top: 1rem;
+
+        @include media-breakpoint-down(sm){
+            font-size: 1.8rem;
+            height:9rem;
+        }
+    
+    }
+
+    &-icon-box{
+ 
+
+        &-circle{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            top: -3.5rem;
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+            border: .5rem solid $color-white;
+            box-shadow: 0 8px 15px 3px rgba(0, 0, 0, 0.17);
+            margin-bottom: .5rem;
+
+            @include media-breakpoint-down(md){
+                top: 1rem;
+            }
+            
+
+            & i{
+                color: $color-white;
+                position: relative;
+                left:50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 3rem;
+            }
+
+
+            &-1{
+              background-color: $tertiary-red;
+            }
+
+            &-2{
+              background-color: $secondary-blue-dark;
+            }
+
+            &-3{
+              background-color: $tertiary-orange;
+
+              @include media-breakpoint-down(md){
+                  margin-top:1rem;
+              }
+            }
+
+            &-4{
+              background-color: $tertiary-yellow-dark;
+              @include media-breakpoint-down(md){
+                margin-top:1rem;
+            }
+            }
+        }
+
+        &-title{
+           font-size: 1.6rem;
+           font-weight: 500;
+           text-align: center;
+           position: relative;
+           top: -3.5rem;
+
+           @include media-breakpoint-down(md){
+            top: 1rem;
+        }
+
+
+            &-1{
+               color: $tertiary-red;
+            }
+
+            &-2{
+                color: $secondary-blue-dark;
+            }
+
+            &-3{
+                color: $tertiary-orange;
+            }
+
+            &-4{
+                color: $tertiary-yellow-dark;
+            }
+        }
+
+        &-content{
+            text-align: center;
+            position: relative;
+            top: -3rem;
+
+            @include media-breakpoint-down(md){
+                top: 1rem;
+            }
+
+        }
+    }
+
+
+}
+
+.time{
+    height: 16rem;
+    width: 100%;
+
+
+    &-top{
+        position: relative;
+        height: 4rem;
+        border-top: 1px solid $background-grey;
+
+        @include media-breakpoint-down(xs){
+            height: 6rem;
+        }
+
+
+        & p{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: $primary-purple-dark;
+
+            @include media-breakpoint-down(sm){
+                font-size:1.8rem;
+            }
+
+        }
+    }
+
+    &-bottom{
+        position: relative;
+        width: 100%;
+        height: 12rem;
+        background-color: $primary-purple-dark;
+
+        & div{
+            position: relative;
+            width: 90%;
+            height: 7rem;
+            left: 50%;
+            top: 5%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: $color-white;
+            font-weight: 500;
+
+            @include media-breakpoint-down(xs){
+                font-weight: 500;
+               }
+ 
+
+            & .top{
+                font-size: 2rem;
+
+                @include media-breakpoint-down(xs){
+                 font-size:1.6rem;
+                }
+            }
+
+            & .middle{
+                font-size: 1.5rem;
+
+                @include media-breakpoint-down(xs){
+                    font-size:1.2rem;
+                   }
+            }
+        }
+    }
+}
+
+.about{
+    width: 100%;
+    padding:2rem;
+    background-color: $primary-purple-dark;
+    margin-bottom:2rem;
+
+    &-container{
+        @include media-breakpoint-down(xs){
+            padding:1rem 0rem;
+        }
+    }
+
+    &-row {
+        background-color: $color-white;
+        border-radius: 5px;
+        text-align: justify;
+        
+        &-title{
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-bottom: .5rem;
+
+            font-weight: 500;
+            font-size: 2rem;
+            color: $primary-purple-dark;
+
+            @include media-breakpoint-down(xs){
+                font-size: 1.5rem;
+            }
+        }
+
+        &-content{
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 2rem;
+
+            font-size: 1.1rem;
+
+            @include media-breakpoint-down(xs){
+                padding-left: .4rem;
+                padding-right: .4rem;
+                padding-bottom: .4rem;
+            }
+        }
+    }
+}
+
+.mortgage-types{
+    position: relative;
+    width: 100%;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+
+
+    &-card{
+        width: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $primary-purple-dark;
+        border: 6px solid $primary-purple;
+        padding: 1rem;
+        border-radius: 3px;
+        height: 18rem;
+        box-shadow: 0 10px 10px 3px rgba(0, 0, 0, 0.17);
+
+        @include media-breakpoint-down(md){
+            height:14rem;
+            margin-bottom: 2rem;
+        }
+
+        @include media-breakpoint-down(sm){
+            height:18rem;
+        }
+
+        @include media-breakpoint-down(xs){
+            height:16rem;
+        }
+
+        & .top{
+          position: relative;
+          height: 34%;
+          font-weight: 500;
+          font-size: 1.5rem;
+
+          @include media-breakpoint-down(lg){
+              font-size: 1.3rem;
+              height: 27%;
+          }
+
+          & p{
+              line-height: 1.5rem;
+          }
+
+          & i{
+              position: absolute;
+              right: .6rem;
+              top: .6rem;
+              font-size: 2.2rem;
+          }
+           
+          &-ftb{
+           color: $secondary-blue;
+          }
+
+          &-home-mover{
+            color: $tertiary-red;
+          }
+
+          &-remortgage{
+              color: $tertiary-orange;
+          }
+
+          &-btl{
+              color: $tertiary-yellow-dark;
+          }
+
+        }
+
+        & .middle{
+          height: 33%;
+          color: $color-white;
+          font-size: 1.1rem;
+
+          @include media-breakpoint-down(lg){
+              height: 40%
+          }
+        }
+
+        & .bottom{
+          position: relative;
+          height: 33%;
+
+          &-ftb{
+
+            & a{
+                position: absolute;
+                bottom: 0rem;
+                left: 0rem;
+                padding: .7rem;
+                background-color: $secondary-blue;
+                color: $color-white;
+            }
+          }
+
+          
+          &-home-mover{
+
+            & a{
+                position: absolute;
+                bottom: 0rem;
+                left: 0rem;
+                padding: .7rem;
+                background-color: $tertiary-red;
+                color: $color-white;
+            }
+          }
+
+          &-remortgage{
+
+            & a{
+                position: absolute;
+                bottom: 0rem;
+                left: 0rem;
+                padding: .7rem;
+                background-color: $tertiary-orange;
+                color: $color-white;
+            }
+          }
+
+          &-btl{
+
+            & a{
+                position: absolute;
+                bottom: 0rem;
+                left: 0rem;
+                padding: .7rem;
+                background-color: $tertiary-yellow-dark;
+                color: $color-white;
+            }
+          }
+
+          
+
+
+        }
+    }
+}

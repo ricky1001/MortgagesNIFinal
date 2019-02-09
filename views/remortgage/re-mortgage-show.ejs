@@ -1,0 +1,118 @@
+<% include ../partials/heads %>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-sm-12 main">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/">Home</a></li>
+                      <li class="breadcrumb-item" aria-current="page"> <a href="/re-mortgage-advice">Re-mortgage Advice</a></li>
+                      <li class="breadcrumb-item" aria-current="page"><%= foundrmPost.title %></li>
+                    </ol>
+                </nav>
+
+                <h2 class="main-title"><%= foundrmPost.title %></h2>                  
+                         
+                <img class="main-img" src="<%= foundrmPost.image %>" alt="">
+ 
+               
+                 <%- foundrmPost.content %>
+            
+
+        </div>
+
+            <div class="col-md-4 col-sm-12 side-bar">
+            <div class="side-bar-list">
+                <div class="side-bar-list-title">
+                    Re-Mortgage Advice
+                </div>
+                <div class="side-bar-list-item">
+                    <a href="/re-mortgage-advice">Re-mortgage Advice</a>
+                </div>
+                <div class="side-bar-list-item">
+                    <a href="/re-mortgage-advice/re-mortgage-for-a-better-rate">Re-mortgage for a Better Rate</a>
+                </div>
+                <div class="side-bar-list-item">
+                    <a href="/re-mortgage-advice/re-mortgage-to-buy-another-property">Re-mortgage to buy another property</a>
+                </div>
+                <div class="side-bar-list-item">
+                    <a href="/re-mortgage-advice/re-mortgage-to-reduce-the-term">Re-mortgage to reduce the Term</a>
+                </div>
+                <div class="side-bar-list-item">
+                    <a href="/re-mortgage-advice/re-mortgaging-to-pay-off-debts">Re-mortgage to pay off Debts</a>
+                </div>
+                <div class="side-bar-list-item">
+                    <a href="/re-mortgage-advice/re-mortgage-guide">Re-mortgage Guide</a>
+                </div>
+            </div>
+
+            <div class="side-bar-infograph">
+                    <div class="side-bar-infograph-top">
+                       <div class="side-bar-infograph-item">
+                          <div class="side-bar-infograph-item-icon-box">
+                             <i class="far fa-thumbs-up"></i>
+                          </div>
+                          <div class="side-bar-infograph-item-title">
+                            Fee Free
+                          </div>
+                          <div class="side-bar-infograph-item-content">
+                            We will never charge you a fee for our services !
+                          </div>
+                       </div>
+                       <div class="side-bar-infograph-item">
+                            <div class="side-bar-infograph-item-icon-box">
+                               <i class="far fa-thumbs-up"></i>
+                            </div>
+                            <div class="side-bar-infograph-item-title">
+                              Fee Free
+                            </div>
+                            <div class="side-bar-infograph-item-content">
+                              We will never charge you a fee for our services !
+                            </div>
+                         </div>
+                    </div>
+                    <div class="side-bar-infograph-bottom">
+                            <div class="side-bar-infograph-item">
+                                    <div class="side-bar-infograph-item-icon-box">
+                                       <i class="far fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="side-bar-infograph-item-title">
+                                      Fee Free
+                                    </div>
+                                    <div class="side-bar-infograph-item-content">
+                                      We will never charge you a fee for our services !
+                                    </div>
+                                 </div>
+                                 <div class="side-bar-infograph-item">
+                                        <div class="side-bar-infograph-item-icon-box">
+                                           <i class="far fa-thumbs-up"></i>
+                                        </div>
+                                        <div class="side-bar-infograph-item-title">
+                                          Fee Free
+                                        </div>
+                                        <div class="side-bar-infograph-item-content">
+                                          We will never charge you a fee for our services !
+                                        </div>
+                                     </div>
+                    </div>
+                </div>
+
+            <div class="side-bar-contact">
+                    <div class="side-bar-contact-title">
+                        Speak to an Adviser today <br>
+                        Call 02838 350077 <br>
+                        <div class="side-bar-contact-title-or">or</div>
+                        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modal-enquire">Enquire Now</a>
+                    </div>
+            </div>
+        </div>
+    
+   </div>
+</div>
+
+
+
+
+<% include ../partials/footer %>

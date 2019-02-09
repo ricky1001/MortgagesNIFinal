@@ -1,0 +1,9 @@
+.modal{
+
+    &-buttons-outter{
+        text-align: center;
+        & button{
+            width: 45%;
+        }
+    }
+}

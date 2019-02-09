@@ -1,0 +1,81 @@
+<% include ./partials/heads %>
+
+<div class="section">
+   <div class="container">
+     <div class="row">  
+       <div class="col-lg-8 col-md-12 mt-3">   
+         <h3 class="display-6">Our Service</h3>
+          <p class="text-justify mainContentInner">
+              At Mortgage Adviser NI we take pride in finding the right broker to guide our clients through the process of buying their first home, moving home or remortgaging their existing property. The process of buying or refinancing property can be exceptionally time consuming and stressful. At Mortgage Adviser NI the mortgage advisers that we work with will ensure you receive the professional, bespoke advice you are looking for.
+              <br><br>This is a brief guide to how our service works in practice.
+          </p>
+         
+         <h3 class="display-6">Initial Contact</h3>
+         <p class="text-justify">
+           We don’t believe in keeping our customers waiting and will never ask you to dial a premium rate number. We will ensure that one of the mortgage brokers we introduce to will be able to respond to your enquiry anytime between 9:00 am – 5:00 pm Monday – Friday excluding bank holidays. If all of the mortgage brokers that we introduce to are busy we will contact you at our earliest convenience usually within 2-3 hours of receiving your enquiry.
+         </p>
+         
+         <h3 class="display-6">Free Mortgage Consultation</h3>
+         <p class="text-justify"> 
+           When contact is made we will take initial details over the phone or via a contact form on our website. We will then have one of the mortgage advisers we introduce to assess your individual situation if they think we can be of assistance they will make an appointment with you for your free mortgage consultation either face to face at a location which is convenient to you or at their own office which ever one suits you best. This consultation will involve the gathering of background information. For example, detailed accounts of your incomings & outgoings & we will then be able to check your details against the lenders affordability calculators & criteria to find the mortgage which is right for you. This process means that they will not waste valuable credit searches in order to find a lender who is willing to give you the mortgage you require.
+         </p>
+         
+         <h3 class="display-6">Quotation / Recommendation</h3>
+          <p class="text-justify">
+            Once one of the mortgage brokers we introduce to has processed your details they will select the mortgage which is best suited to your needs and begin the application process. This will usually involve us requesting a mortgage agreement in principle on your behalf, a mortgage agreement in principle will show your estate agent where applicable that you are credit worthy and serious about purchasing your new home.
+         </p>
+         
+         <h3 class="display-6">Mortgage Offer</h3>
+         <p class="text-justify">
+           Providing all the information provided can be verified and the Bank or Lender are happy with your application a mortgage offer will be produced and sent to your choosen conveyancer.
+         </p>
+         
+         <h3 class="display-6">Safe & Secure</h3>
+         <p class="text-justify">
+           You can rest assured that the mortgage advisers we introduce to are registered with data protection and have procedures in place to make sure your information is kept private at all times.
+         </p>
+       </div>
+       
+       <div class="col-lg-4 col-md-12">
+    <h5 class="quick-enquiry"><strong>Quick Enquiry</strong></h5>
+    <div class="container form-container">
+      
+       <div class="form enquiry-form">
+         <div class="container pt-2 pb-2">
+           <form action="enquiry-new" method="POST">
+               <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Your Name" name="enquiry[name]">
+               </div>
+             
+               <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Post Code" name="enquiry[postcode]">
+               </div> 
+
+               <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Your e-mail" name="enquiry[email]">
+               </div>              
+       
+              <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Contact Number" name="enquiry[contactNumber]">
+               </div>
+
+               <div class="form-group">
+              <textarea rows="5" class="form-control" placeholder="Your Message" name="enquiry[content]"></textarea>
+               </div>
+               <input type="submit" value="submit" class="btn btn-block enquiry-form-button">
+             </form>
+          </div>
+         </div>
+    </div>
+        </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<% include ./partials/footer %>

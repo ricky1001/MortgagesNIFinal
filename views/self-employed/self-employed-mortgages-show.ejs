@@ -1,0 +1,70 @@
+<% include ../partials/heads %>
+<div class="section">
+<div class="container"> 
+ <div class="row"> 
+  <div class="col-lg-8">  
+   <div class="mainContentOuter">
+        <h2 class="card-title"><%= foundsePost.title %></h2>               
+
+      <div class="card">      
+                <img class="card-img-top" src="<%= foundsePost.image %>" alt="">
+            <div class="card-body">               
+                <p class="card-text">Self-employed Mortgages across all of Northern Ireland</p>
+                <a class="btn btn-warning btn-block" href="#">Read More</a>
+            </div>
+        </div>
+     <div>
+       <%- foundsePost.content %>
+     </div>
+   
+    </div>
+  </div>
+
+  <div class="col-lg-4 ">
+   <div class="relatedPages">
+     <div class="container ">
+      <ul class="pl-0"> 
+       <li><a href="/self-employed-mortgages">Self-Employed Mortgage Advice</a></li>     
+       <li><a href="/self-employed-mortgages/improve-your-chances">Improve Your Chances</a></li>
+       <li><a href="/self-employed-mortgages/self-employed-proving-my-income">Proving Your Income</a></li>
+      </ul>
+     </div>
+   </div>
+    
+    <h5 class="quick-enquiry"><strong>Quick Enquiry</strong></h5>
+    <div class="container form-container">
+      
+       <div class="form enquiry-form">
+         <div class="container pt-2 pb-2">
+           <form action="enquiry-new" method="POST">
+               <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Your Name" name="enquiry[name]">
+               </div>
+             
+               <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Post Code" name="enquiry[postcode]">
+               </div> 
+
+               <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Your e-mail" name="enquiry[email]">
+               </div>              
+       
+              <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Contact Number" name="enquiry[contactNumber]">
+               </div>
+
+               <div class="form-group">
+              <textarea rows="5" class="form-control" placeholder="Your Message" name="enquiry[content]"></textarea>
+               </div>
+               <input type="submit" value="submit" class="btn btn-block enquiry-form-button">
+             </form>
+          </div>
+         </div>
+    </div>
+  </div>
+ </div>
+</div>
+  
+</div>
+
+  <% include ../partials/footer %>
