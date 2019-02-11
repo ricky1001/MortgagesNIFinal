@@ -12,7 +12,7 @@ router.get("/mortgage-news", function(req, res){
     if(err){
       console.log(err)
     } else{
-      res.render("./mortgageNews/mortgage-news", {maNews: mNews,
+      res.render("./mortgageNews/mortgage-news", {mNews: mNews,
                                                  metatitle: metatitle,
                                                  metadescription: metadescription
                                                  });

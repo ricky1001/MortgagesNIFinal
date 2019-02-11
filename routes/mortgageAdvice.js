@@ -58,7 +58,7 @@ router.get("/mortgage-advice/:id", function(req, res){
     }else{
       res.render("./mortgageAdvice/mortgage-advice-show", 
                  {post: foundPost, 
-                  metatitle: foundPost.metatitle, 
+                  metatitle: foundPost.metatitle,
                   metadescription: foundPost.metadescription});
     }
   })

@@ -1,16 +1,16 @@
 <% include ../partials/heads %>
 
-<section id="mortgageNewsHead">
+<section id="mortgageAdviceHead">
  <div class="container">
   <div class="row">
     <div class="col-lg-8  col-md-12 mt-3">
       <h4>
-        Most Recent Mortgage News in Northern Ireland 
+        Mortgage News Posts 
       </h4>
       <p>
         The Latest Mortgage News Posts written by front line Mortgage Brokers in Northern Ireland
       </p>
-         <% maNews.forEach(function(mNews){ %>
+         <% mNews.forEach(function(mNews){ %>
       <div class="row container indexPageBox">
       <div class="col"> <h5><%=mNews.title%></h5></div>
       
@@ -21,7 +21,8 @@
              
            <img class="img-fluid" height="200px" src="<%= mNews.image %>" alt="">
            </div>
-           <div class="col-lg-6">     
+           <div class="col-lg-6">
+         
             <p class="text-justify">
              <%- mNews.content.substring(0, 211) %>
               <br><br>
@@ -35,38 +36,99 @@
     
     
    </div>
-   <div class="col-lg-4 col-md-12">
-    <h5 class="quick-enquiry"><strong>Quick Enquiry</strong></h5>
-    <div class="container form-container">
-      
-       <div class="form enquiry-form">
-         <div class="container pt-2 pb-2">
-           <form action="enquiry-new" method="POST">
-               <div class="form-group">
-                 <input type="text" class="form-control" placeholder="Your Name" name="enquiry[name]">
-               </div>
-             
-               <div class="form-group">
-                 <input type="text" class="form-control" placeholder="Post Code" name="enquiry[postcode]">
-               </div> 
+   <div class="col-md-12 col-lg-4 side-bar">
+    <div class="side-bar-list">
+      <div class="side-bar-list-title">
+          Other Catagories
+      </div>
+      <div class="side-bar-list-item">
+          <a href="/first-time-buyer-mortgages">First Time Buyer Mortgages</a>
+      </div>
+      <div class="side-bar-list-item">
+          <a href="/buy-to-let-mortgages">Buy to Let Mortgages</a>
+      </div>
+      <div class="side-bar-list-item">
+          <a href="/re-mortgage-advice">Re-mortgages</a>
+      </div>
+      <div class="side-bar-list-item">
+          <a href="/government-schemes">Government Schemes</a>
+      </div>
+      <div class="side-bar-list-item">
+          <a href="/self-employed-mortgages">Self-employed Advice</a>
+      </div>
+      <div class="side-bar-list-item">
+          <a href="/mortgage-advice">General Mortgage Advice</a>
+      </div>
+      <div class="side-bar-list-item">
+        <a href="/mortgage-news">Mortgage News</a>
+      </div>
+  </div>
 
-               <div class="form-group">
-                 <input type="text" class="form-control" placeholder="Your e-mail" name="enquiry[email]">
-               </div>              
-       
-              <div class="form-group">
-                 <input type="text" class="form-control" placeholder="Contact Number" name="enquiry[contactNumber]">
+    <div class="side-bar-infograph">
+            <div class="side-bar-infograph-top">
+               <div class="side-bar-infograph-item">
+                  <div class="side-bar-infograph-item-icon-box">
+                     <i class="far fa-thumbs-up"></i>
+                  </div>
+                  <div class="side-bar-infograph-item-title">
+                    Fee Free
+                  </div>
+                  <div class="side-bar-infograph-item-content">
+                    We will never charge you a fee for our services !
+                  </div>
                </div>
+               <div class="side-bar-infograph-item">
+                    <div class="side-bar-infograph-item-icon-box">
+                       <i class="far fa-thumbs-up"></i>
+                    </div>
+                    <div class="side-bar-infograph-item-title">
+                      Fee Free
+                    </div>
+                    <div class="side-bar-infograph-item-content">
+                      We will never charge you a fee for our services !
+                    </div>
+                 </div>
+            </div>
+            <div class="side-bar-infograph-bottom">
+                    <div class="side-bar-infograph-item">
+                            <div class="side-bar-infograph-item-icon-box">
+                               <i class="far fa-thumbs-up"></i>
+                            </div>
+                            <div class="side-bar-infograph-item-title">
+                              Fee Free
+                            </div>
+                            <div class="side-bar-infograph-item-content">
+                              We will never charge you a fee for our services !
+                            </div>
+                         </div>
+                         <div class="side-bar-infograph-item">
+                                <div class="side-bar-infograph-item-icon-box">
+                                   <i class="far fa-thumbs-up"></i>
+                                </div>
+                                <div class="side-bar-infograph-item-title">
+                                  Fee Free
+                                </div>
+                                <div class="side-bar-infograph-item-content">
+                                  We will never charge you a fee for our services !
+                                </div>
+                             </div>
+            </div>
+        </div>
 
-               <div class="form-group">
-              <textarea rows="5" class="form-control" placeholder="Your Message" name="enquiry[content]"></textarea>
-               </div>
-               <input type="submit" value="submit" class="btn btn-block enquiry-form-button">
-             </form>
-          </div>
-         </div>
+    <div class="side-bar-contact">
+            <div class="side-bar-contact-title">
+                Speak to an Adviser today <br>
+                Call 02838 350077 <br>
+                <div class="side-bar-contact-title-or">or</div>
+                <a href="" class="btn btn-success" data-toggle="modal" data-target="#modal-enquire">Enquire Now</a>
+            </div>
     </div>
-         </div>
+</div>
+        </div>
+       </div>
+      </div>
+     </div>
+
         </div>
        </div>
       </div>

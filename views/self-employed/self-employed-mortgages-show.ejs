@@ -1,70 +1,101 @@
 <% include ../partials/heads %>
-<div class="section">
-<div class="container"> 
- <div class="row"> 
-  <div class="col-lg-8">  
-   <div class="mainContentOuter">
-        <h2 class="card-title"><%= foundsePost.title %></h2>               
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-sm-12 main">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><a href="/self-employed-mortgages">Self Employed</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><%= foundsePost.title %></li>
+                    </ol>
+                </nav>
+            
+                <h2 class="main-title"><%= foundsePost.title %></h2>                  
+                         
+                <img class="main-img" src="/img/Self-Employed.jpg" alt="">
+ 
+               
+                 <%- foundsePost.content %>
+                </div>
 
-      <div class="card">      
-                <img class="card-img-top" src="<%= foundsePost.image %>" alt="">
-            <div class="card-body">               
-                <p class="card-text">Self-employed Mortgages across all of Northern Ireland</p>
-                <a class="btn btn-warning btn-block" href="#">Read More</a>
+            <div class="col-md-4 col-sm-12 side-bar">
+            <div class="side-bar-list">
+                <div class="side-bar-list-title">
+                    First Time Buyer Mortgage Advice
+                </div>
+                <div class="side-bar-list-item">
+                    <a href="/self-employed-mortgages">Self-employed Mortgages</a>
+                </div>
+                <div class="side-bar-list-item">
+                    <a href="/self-employed-mortgages/improve-your-chances">Improve your chances</a>
+                </div>
+                <div class="side-bar-list-item">
+                    <a href="/self-employed-mortgages/self-employed-proving-my-income">Prove your Income</a>
+                </div>
+            </div>
+
+            <div class="side-bar-infograph">
+                    <div class="side-bar-infograph-top">
+                       <div class="side-bar-infograph-item">
+                          <div class="side-bar-infograph-item-icon-box">
+                             <i class="far fa-thumbs-up"></i>
+                          </div>
+                          <div class="side-bar-infograph-item-title">
+                            Fee Free
+                          </div>
+                          <div class="side-bar-infograph-item-content">
+                            We will never charge you a fee for our services !
+                          </div>
+                       </div>
+                       <div class="side-bar-infograph-item">
+                            <div class="side-bar-infograph-item-icon-box">
+                               <i class="far fa-thumbs-up"></i>
+                            </div>
+                            <div class="side-bar-infograph-item-title">
+                              Fee Free
+                            </div>
+                            <div class="side-bar-infograph-item-content">
+                              We will never charge you a fee for our services !
+                            </div>
+                         </div>
+                    </div>
+                    <div class="side-bar-infograph-bottom">
+                            <div class="side-bar-infograph-item">
+                                    <div class="side-bar-infograph-item-icon-box">
+                                       <i class="far fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="side-bar-infograph-item-title">
+                                      Fee Free
+                                    </div>
+                                    <div class="side-bar-infograph-item-content">
+                                      We will never charge you a fee for our services !
+                                    </div>
+                                 </div>
+                                 <div class="side-bar-infograph-item">
+                                        <div class="side-bar-infograph-item-icon-box">
+                                           <i class="far fa-thumbs-up"></i>
+                                        </div>
+                                        <div class="side-bar-infograph-item-title">
+                                          Fee Free
+                                        </div>
+                                        <div class="side-bar-infograph-item-content">
+                                          We will never charge you a fee for our services !
+                                        </div>
+                                     </div>
+                    </div>
+                </div>
+
+            <div class="side-bar-contact">
+                    <div class="side-bar-contact-title">
+                        Speak to an Adviser today <br>
+                        Call 02838 350077 <br>
+                        <div class="side-bar-contact-title-or">or</div>
+                        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modal-enquire">Enquire Now</a>
+                    </div>
             </div>
         </div>
-     <div>
-       <%- foundsePost.content %>
-     </div>
-   
-    </div>
-  </div>
-
-  <div class="col-lg-4 ">
-   <div class="relatedPages">
-     <div class="container ">
-      <ul class="pl-0"> 
-       <li><a href="/self-employed-mortgages">Self-Employed Mortgage Advice</a></li>     
-       <li><a href="/self-employed-mortgages/improve-your-chances">Improve Your Chances</a></li>
-       <li><a href="/self-employed-mortgages/self-employed-proving-my-income">Proving Your Income</a></li>
-      </ul>
-     </div>
-   </div>
     
-    <h5 class="quick-enquiry"><strong>Quick Enquiry</strong></h5>
-    <div class="container form-container">
-      
-       <div class="form enquiry-form">
-         <div class="container pt-2 pb-2">
-           <form action="enquiry-new" method="POST">
-               <div class="form-group">
-                 <input type="text" class="form-control" placeholder="Your Name" name="enquiry[name]">
-               </div>
-             
-               <div class="form-group">
-                 <input type="text" class="form-control" placeholder="Post Code" name="enquiry[postcode]">
-               </div> 
-
-               <div class="form-group">
-                 <input type="text" class="form-control" placeholder="Your e-mail" name="enquiry[email]">
-               </div>              
-       
-              <div class="form-group">
-                 <input type="text" class="form-control" placeholder="Contact Number" name="enquiry[contactNumber]">
-               </div>
-
-               <div class="form-group">
-              <textarea rows="5" class="form-control" placeholder="Your Message" name="enquiry[content]"></textarea>
-               </div>
-               <input type="submit" value="submit" class="btn btn-block enquiry-form-button">
-             </form>
-          </div>
-         </div>
-    </div>
-  </div>
- </div>
-</div>
-  
+   </div>
 </div>
 
   <% include ../partials/footer %>

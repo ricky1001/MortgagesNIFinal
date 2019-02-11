@@ -6,7 +6,6 @@ var mortgageNewsSchema = new mongoose.Schema({
   content: String,
   metatitle: String,
   metadescription: String,
-  _id: String,
   
 });
 

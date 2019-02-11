@@ -1,0 +1,33 @@
+Add a box stuck to the bottom of the page on xs devices allowing the user to call direct with a click or send a message the box should become visable on page scroll
+
+Add a logo 
+
+fix show pages for mortgage news and advice
+
+add a home link icon
+
+make mortgage calculators
+
+make the rates table 
+
+add new content to the 4 step process boxes on the home page
+
+add Home mover content 1 page for now
+
+work on styling for mortgage types section on the home page
+
+add another post for mortgage advice so the content on the home page is full
+
+Work on the styling for a content / show page the top image doesn't look quite right
+
+confirm that when the site goes live the images will woark as they are 
+
+work out how to add a google map location to the site 
+
+make a contact us page 
+
+Make an about us page add meet the team etc
+
+look for better images for the whole site
+
+add content to the side bar info graph

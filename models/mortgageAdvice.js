@@ -6,7 +6,7 @@ var mortgageAdviceSchema = new mongoose.Schema({
   content: String,
   metatitle: String,
   metadescription: String,
-  _id: String,
+
 });
 
 module.exports = mongoose.model("mortgageAdvice", mortgageAdviceSchema);

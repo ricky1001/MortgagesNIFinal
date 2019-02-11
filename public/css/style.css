@@ -7276,6 +7276,7 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative;
     height: 2rem;
     width: 70%;
+    padding-left: 5.5rem;
     display: inline-block; }
     .nav-top .item-list li {
       position: relative;
@@ -7407,6 +7408,11 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 1.2rem;
       font-weight: 500;
       padding: .4rem; }
+      .nav-sm-menu-inner ul li a {
+        color: #ffffff;
+        text-decoration: none; }
+        .nav-sm-menu-inner ul li a:hover {
+          color: #cf8b17; }
 
 .footer {
   position: relative;
@@ -7667,7 +7673,6 @@ a.text-dark:hover, a.text-dark:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #2d0845;
-    border: 6px solid #9f31e8;
     padding: 1rem;
     border-radius: 3px;
     height: 18rem;
@@ -7841,9 +7846,25 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: .3rem;
     padding: .2rem;
     padding-left: .5rem;
-    border-left: 0.3rem solid #2d0845;
     background-color: #ffffff;
     font-weight: 500; }
+    .side-bar-list-item a {
+      color: #2d0845; }
+      .side-bar-list-item a:hover {
+        text-decoration: none;
+        color: #9f31e8; }
 
 .orangeHighlight {
-  color: #96a800; }
+  color: #cf8b17; }
+
+.indexPageBox {
+  box-shadow: 0 0 5px 0px rgba(153, 153, 153, 0.6);
+  border: 1px solid #D8D8D8;
+  border-bottom: none;
+  padding: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0px; }
+
+.mortgageAdviceHead {
+  margin-bottom: 2rem; }
