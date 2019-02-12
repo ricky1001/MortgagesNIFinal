@@ -307,19 +307,19 @@
           }
            
           &-ftb{
-           color: $secondary-blue;
+           color: $secondary-blue-light;
           }
 
           &-home-mover{
-            color: $tertiary-red;
+            color: $tertiary-red-light;
           }
 
           &-remortgage{
-              color: $tertiary-orange;
+              color: $tertiary-orange-light;
           }
 
           &-btl{
-              color: $tertiary-yellow-dark;
+              color: $tertiary-yellow-light;
           }
 
         }
@@ -345,7 +345,8 @@
                 bottom: 0rem;
                 left: 0rem;
                 padding: .7rem;
-                background-color: $secondary-blue;
+                background-color: $tertiary-orange-dark;
+                font-weight: 500;
                 color: $color-white;
             }
           }
@@ -358,7 +359,8 @@
                 bottom: 0rem;
                 left: 0rem;
                 padding: .7rem;
-                background-color: $tertiary-red;
+                background-color: $tertiary-orange-dark;
+                font-weight: 500;
                 color: $color-white;
             }
           }
@@ -370,7 +372,8 @@
                 bottom: 0rem;
                 left: 0rem;
                 padding: .7rem;
-                background-color: $tertiary-orange;
+                background-color: $tertiary-orange-dark;
+                font-weight: 500;
                 color: $color-white;
             }
           }
@@ -382,7 +385,8 @@
                 bottom: 0rem;
                 left: 0rem;
                 padding: .7rem;
-                background-color: $tertiary-yellow-dark;
+                background-color: $tertiary-orange-dark;
+                font-weight: 500;
                 color: $color-white;
             }
           }

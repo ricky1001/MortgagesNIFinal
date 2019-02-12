@@ -7755,13 +7755,13 @@ a.text-dark:hover, a.text-dark:focus {
         top: .6rem;
         font-size: 2.2rem; }
       .mortgage-types-card .top-ftb {
-        color: #53a2ff; }
+        color: #B9D9FF; }
       .mortgage-types-card .top-home-mover {
-        color: #ff5042; }
+        color: #ff8f86; }
       .mortgage-types-card .top-remortgage {
-        color: #e8a431; }
+        color: #efbf6e; }
       .mortgage-types-card .top-btl {
-        color: #96a800; }
+        color: #f0ff75; }
     .mortgage-types-card .middle {
       height: 33%;
       color: #ffffff;
@@ -7777,28 +7777,32 @@ a.text-dark:hover, a.text-dark:focus {
         bottom: 0rem;
         left: 0rem;
         padding: .7rem;
-        background-color: #53a2ff;
+        background-color: #cf8b17;
+        font-weight: 500;
         color: #ffffff; }
       .mortgage-types-card .bottom-home-mover a {
         position: absolute;
         bottom: 0rem;
         left: 0rem;
         padding: .7rem;
-        background-color: #ff5042;
+        background-color: #cf8b17;
+        font-weight: 500;
         color: #ffffff; }
       .mortgage-types-card .bottom-remortgage a {
         position: absolute;
         bottom: 0rem;
         left: 0rem;
         padding: .7rem;
-        background-color: #e8a431;
+        background-color: #cf8b17;
+        font-weight: 500;
         color: #ffffff; }
       .mortgage-types-card .bottom-btl a {
         position: absolute;
         bottom: 0rem;
         left: 0rem;
         padding: .7rem;
-        background-color: #96a800;
+        background-color: #cf8b17;
+        font-weight: 500;
         color: #ffffff; }
 
 .main {
