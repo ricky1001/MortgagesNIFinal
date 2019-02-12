@@ -7421,7 +7421,8 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   position: sticky;
   position: -webkit-sticky;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 10000000; }
   @media (min-width: 576px) {
     .scrolling-footer-scrolled {
       display: none; } }
