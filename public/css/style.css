@@ -7265,6 +7265,9 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
   border-radius: 8px;
   text-decoration: none; }
+  .cusbutton-orange a {
+    text-decoration: none;
+    color: #ffffff; }
 
 .cusbutton-green {
   padding: .5rem;
