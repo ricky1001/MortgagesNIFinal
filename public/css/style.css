@@ -7439,6 +7439,8 @@ a.text-dark:hover, a.text-dark:focus {
   transform: translateY(-50%); }
   .scroll-contact-inner-buttons {
     float: left; }
+    .scroll-contact-inner-buttons span {
+      color: #ffffff; }
   .scroll-contact-inner-icons {
     float: right;
     color: #ffffff; }
