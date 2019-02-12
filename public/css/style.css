@@ -7414,6 +7414,40 @@ a.text-dark:hover, a.text-dark:focus {
         .nav-sm-menu-inner ul li a:hover {
           color: #cf8b17; }
 
+.scrolling-footer {
+  display: none; }
+
+.scrolling-footer-scrolled {
+  display: block;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0; }
+  @media (min-width: 576px) {
+    .scrolling-footer-scrolled {
+      display: none; } }
+
+.scroll-contact-outter {
+  position: relative;
+  height: 5rem;
+  background-color: #2d0845; }
+
+.scroll-contact-inner {
+  position: relative;
+  height: 3rem;
+  top: 50%;
+  transform: translateY(-50%); }
+  .scroll-contact-inner-buttons {
+    float: left; }
+  .scroll-contact-inner-icons {
+    float: right;
+    color: #ffffff; }
+    .scroll-contact-inner-icons-text {
+      font-size: 1.4rem;
+      margin-right: .4rem; }
+    .scroll-contact-inner-icons i {
+      padding: 0rem .4rem;
+      font-size: 1.5rem; }
+
 .footer {
   position: relative;
   width: 100%; }

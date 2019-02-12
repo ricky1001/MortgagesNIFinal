@@ -1,3 +1,59 @@
+//Contact us bar appears on scroll
+.scrolling-footer{
+    display: none;
+}
+
+.scrolling-footer-scrolled{
+    display: block;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom:0;
+
+    @include media-breakpoint-up(sm){
+        display: none;
+    }
+}
+
+.scroll-contact{
+
+    &-outter{
+        position: relative;
+        height: 5rem;
+        background-color: $primary-purple-dark;
+
+    }
+
+    &-inner{
+        position: relative;
+        height: 3rem;
+        top: 50%;
+        transform: translateY(-50%);
+        
+
+        &-buttons{
+            float: left;
+        }
+
+        &-icons{
+            float: right;
+            color: $color-white;
+            
+            &-text{
+                font-size: 1.4rem;
+                margin-right: .4rem;
+            }
+
+            & i{
+                padding: 0rem .4rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
+
 .footer{
     position: relative;
     width: 100%;
