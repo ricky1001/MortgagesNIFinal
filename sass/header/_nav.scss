@@ -116,21 +116,19 @@
     &-bottom{
 
         position: relative;
-        height: 2rem;
+        height: 2.5rem;
         width: 100%;
         background-color:  $primary-purple-dark;
         z-index: 3;
 
         & ul{
             position: relative;
-            height: 2.2rem;
+            height: 2.5rem;
             width: 100%;
 
             & li{
                 position: relative;
-                height: 2.2rem;
-                top: 50%;
-                transform: translateY(-50%);
+                height: 1.5rem;
                 list-style: none;
                 display: inline-block;
                 font-weight: 500;
@@ -138,6 +136,9 @@
                 font-size: 1rem;
                 width: 16%;
                 text-align: center;
+                top: 50%;
+                transform: translateY(-50%);
+
 
             }
         }

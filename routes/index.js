@@ -92,6 +92,16 @@ router.get("/faq", function(req,res){
             )
 })
 
+//Contact us
+router.get("/contact-us", function(req,res){
+  var metatitle = "Contact Mortgages Northern Ireland"
+  var metadescription = "Submit an enquiry to Mortgages Northern Ireland"
+  res.render("contact-us",
+             {metatitle:metatitle, 
+              metadescription: metadescription}
+            )
+})
+
 //new head
 router.get("/heads", function(req, res){
   var metatitle = "Temporary Header"

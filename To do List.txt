@@ -2,19 +2,23 @@ Add a box stuck to the bottom of the page on xs devices allowing the user to cal
 
 Add a logo 
 
-fix show pages for mortgage news and advice
+Buy vectored image for the home page so that it scales on bigger screens as it is currently repeating 
+
+Make all the forms work
+
+fix show pages for mortgage news and advice **
 
 add a home link icon
 
-make mortgage calculators
+make a contact us page **
 
-make the rates table 
+Make an about us page add meet the team etc
 
 add new content to the 4 step process boxes on the home page
 
 add Home mover content 1 page for now
 
-work on styling for mortgage types section on the home page
+work on styling for mortgage types section on the home page 
 
 add another post for mortgage advice so the content on the home page is full
 
@@ -22,11 +26,11 @@ Work on the styling for a content / show page the top image doesn't look quite r
 
 confirm that when the site goes live the images will woark as they are 
 
-work out how to add a google map location to the site 
+work out how to add a google map location to the site  
 
-make a contact us page 
+make mortgage calculators
 
-Make an about us page add meet the team etc
+make the rates table 
 
 look for better images for the whole site
 
