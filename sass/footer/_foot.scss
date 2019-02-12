@@ -29,28 +29,17 @@
         height: 3rem;
         top: 50%;
         transform: translateY(-50%);
-        
+        text-align: center;
+        width: 100%;
 
         &-buttons{
-            float: left;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
-
-        &-icons{
-            float: right;
-            color: $color-white;
-            
-            &-text{
-                font-size: 1.4rem;
-                margin-right: .4rem;
-            }
-
-            & i{
-                padding: 0rem .4rem;
-                font-size: 1.5rem;
-            }
         }
-    }
 }
+
 
 
 

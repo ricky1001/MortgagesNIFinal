@@ -7258,6 +7258,21 @@ a.text-dark:hover, a.text-dark:focus {
     .modal-buttons-outter button {
       width: 45%; }
 
+.cusbutton-orange {
+  padding: .5rem;
+  background-color: #cf8b17;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 8px; }
+
+.cusbutton-green {
+  padding: .5rem;
+  background-color: #96a800;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 8px;
+  margin-right: 1rem; }
+
 @media (max-width: 991.98px) {
   .nav {
     display: none; } }
@@ -7438,18 +7453,13 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   height: 3rem;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%; }
   .scroll-contact-inner-buttons {
-    float: left; }
-  .scroll-contact-inner-icons {
-    float: right;
-    color: #ffffff; }
-    .scroll-contact-inner-icons-text {
-      font-size: 1.4rem;
-      margin-right: .4rem; }
-    .scroll-contact-inner-icons i {
-      padding: 0rem .4rem;
-      font-size: 1.5rem; }
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .footer {
   position: relative;
