@@ -14,11 +14,11 @@ make a contact us page **
 
 Make an about us page add meet the team etc
 
-add new content to the 4 step process boxes on the home page
+add new content to the 4 step process boxes on the home page **
 
 add Home mover content 1 page for now
 
-work on styling for mortgage types section on the home page 
+work on styling for mortgage types section on the home page **
 
 add another post for mortgage advice so the content on the home page is full
 
@@ -34,4 +34,4 @@ make the rates table
 
 look for better images for the whole site
 
-add content to the side bar info graph
+add content to the side bar info graph **
