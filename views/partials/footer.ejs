@@ -190,5 +190,31 @@
 <script src="/js/custom-fixed-bottom.js"></script>
 <script src="/js/form-action.js"></script>
 
+
+
+<script>
+ function initMap(){
+  //map options
+   var options = {
+     zoom: 13,
+     center:{
+       lat: 54.4255129068047,
+       lng: -6.438732861752216
+     } 
+   }
+
+   //New Map
+   var map = new google.maps.Map(document.querySelector(".map"), options);
+   
+   //add marker
+   var marker = new google.maps.Marker({
+     position:{lat: 54.4255129068047, lng: -6.438732861752216},
+     map: map
+   });
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz4WUpKJF-ZnlkR3kyFuiBn1vd2-vcrZQ&callback=initMap"async defer></script>
+
 </body>
 </html

@@ -35,6 +35,7 @@ margin-top: 1rem;
 
 
 .side-bar{
+    margin-top: 1rem;
 
     &-infograph{
         background-color: $tertiary-orange;
@@ -126,7 +127,7 @@ margin-top: 1rem;
 
 
     &-list{
-        margin-top: 1rem;
+    
         margin-bottom: 1rem;
         background-image: linear-gradient(rgba($primary-purple-light, .3), rgba($primary-purple-light, .3));
         padding: 1rem;

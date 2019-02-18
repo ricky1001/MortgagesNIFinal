@@ -12,6 +12,15 @@ router.get("/enquiry-success", function(req, res){
   })
 });
 
+//map  Page
+
+router.get("/map", function(req, res){
+res.render("map", {
+                   metatitle: "Find us",
+                   metadescription: "find us"
+});
+});
+
 
 //Home Page 
 
