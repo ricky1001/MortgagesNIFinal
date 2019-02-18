@@ -10,6 +10,25 @@
       <title><%= metatitle %></title>
       <meta name=description content="<%= metadescription %> ">
       <meta name="format-detection" content="telephone=no">
+      
+<!--
+    Attempt at submitting form without page refresh
+
+    <script type="text/javascript">
+    var frm = $('#myform');
+    frm.submit(function (ev) {
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+                alert('ok');
+            }
+        });
+
+        ev.preventDefault();
+    });
+</script>-->
     </head>
 <body>
   

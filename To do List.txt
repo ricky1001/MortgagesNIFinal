@@ -4,7 +4,7 @@ Add a logo
 
 Buy vectored image for the home page so that it scales on bigger screens as it is currently repeating 
 
-Make all the forms work
+Make all the forms work **
 
 fix show pages for mortgage news and advice **
 
@@ -22,9 +22,9 @@ work on styling for mortgage types section on the home page **
 
 add another post for mortgage advice so the content on the home page is full
 
-Work on the styling for a content / show page the top image doesn't look quite right
+Work on the styling for a content / show page the top image doesn't look quite right **
 
-confirm that when the site goes live the images will woark as they are 
+confirm that when the site goes live the images will woark as they are **
 
 work out how to add a google map location to the site  
 

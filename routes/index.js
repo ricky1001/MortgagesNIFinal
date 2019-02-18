@@ -4,7 +4,13 @@ var Rate = require("../models/rates");
 
 var mortgageAdvice =        require("../models/mortgageAdvice");
 
-
+//message received
+router.get("/enquiry-success", function(req, res){
+  res.render("enquiry-success", {
+                          metatitle: "Enquiry Success",
+                          metadescription: "Your message has been received"
+  })
+});
 
 
 //Home Page 

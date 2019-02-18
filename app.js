@@ -10,6 +10,11 @@ var app = express();
 var passport = require("passport");
 var LocalStrategy = require("passport-local");
 var passportLocalMongoose = require("passport-local-mongoose");
+var nodemailer = require("nodemailer");
+
+
+
+
 
 //Rates
 rates = [
@@ -71,6 +76,60 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 
+//render the form
+app.get("/form", (req, res) => {
+  res.render("form", {
+                      metatitle: "form",
+                      metadescription: "form"
+                      });
+})
+
+
+
+//post to the form
+app.post("/send", function (req, res){
+  var output = `
+  <p>You have a new contact request</p>
+  <h3>Contact Details</h3>
+  <ul>
+    <li>First Name: ${req.body.firstName}</li>
+    <li>Last Name: ${req.body.lastName}</li>
+    <li>email: ${req.body.email}</li>
+    <li>Contact Number: ${req.body.contactNumber}</li>
+  </ul>
+  <h3>Message</h3>
+  <p>${req.body.message}</p>
+  `;
+let transporter = nodemailer.createTransport({
+  service: "gmail",
+  secure: false,
+  port: 25,
+  auth:{
+    user: "richard@mortgagesnorthernireland.com",
+    pass: "Astron!23"
+  },
+  tls: {
+    rejectUnauthorized: false
+  }
+ });
+
+let HelperOptions = {
+  from: '"Mortgages Northern Ireland" <richard@mortgagesnorthernireland.com',
+  to: "richard@mortgagesnorthernireland.com",
+  subject: "Mortgage Enquiry",
+  html: output
+  };
+
+  transporter.sendMail(HelperOptions, (error, info) => {
+    if(error){
+      console.log(error)
+    }else{
+      console.log("The message was sent");
+    res.redirect("/enquiry-success");
+    }
+  });
+
+});
 
 
 

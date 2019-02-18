@@ -7277,6 +7277,16 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 8px;
   margin-right: 1rem; }
 
+.message {
+  display: none; }
+
+.message-sent {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition-duration: 6s; }
+
 @media (max-width: 991.98px) {
   .nav {
     display: none; } }
