@@ -1,0 +1,63 @@
+<% include ../partials/heads %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>How much can I borrow ?</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>
+        Our mortgage borrowing calculator will give you an estimate of how much mortgage you can get, although this will vary greatly from lender to lender. Enter your income details below and hit the 'Calculate' button.
+      <br> <br>
+        If you are looking to borrow money to purchase a property, we strongly advise that you speak to our mortgage advisers to find a mortgage that matches your own situation.
+      </p>
+    </div>
+    <div class="col-sm-8">
+      <div class="row">
+        <div class="col">
+          <h3>First Applicant</h3>
+        </div>
+      </div>
+      <div class="row">
+       <div class="col-6">
+           <label for="firstIncome">Basic Salary</label>
+         <input type="text" class="form-control" id="firstIncome">
+       </div>
+       <div class="col-6">
+           <label for="firstBonus">Bonus Income</label>
+         <input type="text" class="form-control" id="firstBonus">
+       </div>
+     </div>
+      <div class="row">
+        <div class="col">
+          <div class="addSecondApp"><i class="fas fa-plus"></i> Add a second Applicant</div>
+        </div>
+      </div>
+
+    <div class="secondAppInput" id="secondAppHidden">
+      <div class="row">
+       <div class="col-6">
+           <label for="secondIncome">Basic Salary</label>
+         <input type="text" class="form-control" id="secondIncome">
+       </div>
+       <div class="col-6">
+           <label for="secondBonus">Bonus Income</label>
+         <input type="text" class="form-control" id="secondBonus">
+       </div>
+     </div>
+    </div>
+
+    <button class="btn btn-success totalBorrow">Submit</button>
+
+    <div id="maxBorrow" class="youCouldBorrow"> You could borrow up to <span id="totLoan"></span> </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<% include ../partials/footer %>

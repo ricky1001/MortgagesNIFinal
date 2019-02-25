@@ -24,7 +24,7 @@ rates = [
     {lender: "Santander", rate: 1.9},
 ];
 
-//Model Schemas 
+//Model Schemas
 var Rate =                  require("./models/rates");
 var buytolet =              require("./models/buytolet");
 var enquiry =               require("./models/enquiry");
@@ -50,6 +50,7 @@ var mortgageTypeRoutes       = require("./routes/mortgageType");
 var remortgageRoutes         = require("./routes/remortgage");
 var selfEmployedRoutes       = require("./routes/selfEmployed");
 var userRoutes               = require("./routes/user");
+var calculatorRoutes         = require("./routes/calculators");
 
 
 
@@ -144,6 +145,7 @@ app.use(mortgageTypeRoutes);
 app.use(remortgageRoutes);
 app.use(selfEmployedRoutes);
 app.use(userRoutes);
+app.use(calculatorRoutes);
 
 
 

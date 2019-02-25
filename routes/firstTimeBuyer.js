@@ -40,7 +40,7 @@ router.post("/ftb-mortgages-post", function(req, res){
   console.log(req.body);
   firstTimeBuyer.create(req.body.firstTimeBuyer, function(err, newftbPost){
     if(err){
-      console.log("Error")
+      console.log(err)
     }else{
       newftbPost.save();
       res.redirect("/first-time-buyer-mortgages");

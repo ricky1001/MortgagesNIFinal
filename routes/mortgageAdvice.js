@@ -38,7 +38,7 @@ router.post("/mortgage-advice-post", function(req, res){
   console.log(req.body);
   mortgageAdvice.create(req.body.mortgageAdvice, function(err, newmaPost){
     if(err){
-      console.log("Error")
+      console.log(err)
     }else{
       newmaPost.save();
       res.redirect("/mortgage-advice");

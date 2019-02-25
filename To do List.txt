@@ -1,37 +1,58 @@
-Add a box stuck to the bottom of the page on xs devices allowing the user to call direct with a click or send a message the box should become visable on page scroll
+make mortgage calculators
+
+make the rates table 
+
+look for better images for the whole site
 
 Add a logo 
 
+Add a robots.txt file 
+
+Add key words to metadata
+
+add Home mover content 1 page for now
+
+Make an about us page add meet the team etc
+
 Buy vectored image for the home page so that it scales on bigger screens as it is currently repeating 
+
+Add oauth2 to the forms 
+
+Fix all header tags on all pages so that they flow from h1 - h2 etc
+
+Come up with a way to organise all of the blog posts 
+1. so that they display in order of the date they were created
+2. So that they can be searched for ie tagged with First Time Buyer / Buy to Let etc
+
+Creat a Landing page for First Time Buyer marketing page it should include calculators, AIP Link
+
+Create a multi page form like a type form with a mortgage questionnaire
+
+Create a multi page form with a medical questionnaire
+
+
+
+
+add another post for mortgage advice so the content on the home page is full **
+
+Add a box stuck to the bottom of the page on xs devices allowing the user to call direct with a click or send a message the box should become visable on page scroll **
 
 Make all the forms work **
 
 fix show pages for mortgage news and advice **
 
-add a home link icon
+add a home link icon **
 
 make a contact us page **
 
-Make an about us page add meet the team etc
-
 add new content to the 4 step process boxes on the home page **
 
-add Home mover content 1 page for now
-
 work on styling for mortgage types section on the home page **
-
-add another post for mortgage advice so the content on the home page is full
 
 Work on the styling for a content / show page the top image doesn't look quite right **
 
 confirm that when the site goes live the images will woark as they are **
 
 work out how to add a google map location to the site ** 
-
-make mortgage calculators
-
-make the rates table 
-
-look for better images for the whole site
 
 add content to the side bar info graph **

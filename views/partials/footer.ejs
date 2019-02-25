@@ -97,13 +97,13 @@
             <div class="row">
               <div class="col">
                   <label for="lastName">email address</label>
-                  <input type="text" class="form-control" name="email" id="email" placeholder="Your email">                 
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Your email">
               </div>
             </div>
             <div class="row">
                 <div class="col">
                     <label for="Contact Number">Contact Number</label>
-                    <input type="text" class="form-control" name="contactNumber" id="email" placeholder="Contact Number">                 
+                    <input type="text" class="form-control" name="contactNumber" id="email" placeholder="Contact Number">
                 </div>
               </div>
             <div class="row">
@@ -117,7 +117,7 @@
             <div class="row">
               <div class="col">
                 <div class="modal-buttons-outter">
-                    <button type="submit" class="btn btn-success">Send</button>  
+                    <button type="submit" class="btn btn-success">Send</button>
                 </div>
               </div>
             </div>
@@ -142,13 +142,13 @@
             <div class="row">
               <div class="col">
                   <label for="lastName">email address</label>
-                  <input type="text" class="form-control" name="email" id="email" placeholder="Your email">                 
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Your email">
               </div>
             </div>
             <div class="row">
                 <div class="col">
                     <label for="Contact Number">Contact Number</label>
-                    <input type="text" class="form-control" name="contactNumber" id="contactNumber" placeholder="Contact Number">                 
+                    <input type="text" class="form-control" name="contactNumber" id="contactNumber" placeholder="Contact Number">
                 </div>
               </div>
             <div class="row">
@@ -162,7 +162,7 @@
             <div class="row">
               <div class="col">
                 <div class="modal-buttons-outter">
-                    <button type="button" id="form-action" class="btn btn-success">Send</button>  
+                    <button type="button" id="form-action" class="btn btn-success">Send</button>
                 </div>
               </div>
             </div>
@@ -190,6 +190,9 @@
 <script src="/js/custom-fixed-bottom.js"></script>
 <script src="/js/form-action.js"></script>
 
+//Calculator JS
+<script src="/js/calculators.js"></script>
+
 
 
 <script>
@@ -200,12 +203,12 @@
      center:{
        lat: 54.4255129068047,
        lng: -6.438732861752216
-     } 
+     }
    }
 
    //New Map
    var map = new google.maps.Map(document.querySelector(".map"), options);
-   
+
    //add marker
    var marker = new google.maps.Marker({
      position:{lat: 54.4255129068047, lng: -6.438732861752216},
