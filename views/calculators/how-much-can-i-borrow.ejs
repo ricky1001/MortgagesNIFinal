@@ -22,11 +22,11 @@
       </div>
       <div class="row">
        <div class="col-6">
-           <label for="firstIncome">Basic Salary</label>
+           <label for="firstIncome">Basic Salary Annual Gross</label>
          <input type="text" class="form-control" id="firstIncome">
        </div>
        <div class="col-6">
-           <label for="firstBonus">Bonus Income</label>
+           <label for="firstBonus">Bonus Annual Gross</label>
          <input type="text" class="form-control" id="firstBonus">
        </div>
      </div>
@@ -38,20 +38,33 @@
 
     <div class="secondAppInput" id="secondAppHidden">
       <div class="row">
+          <div class="col">
+            <h3>Second Applicant Income</h3>
+          </div>
+      </div>
+      <div class="row">
        <div class="col-6">
-           <label for="secondIncome">Basic Salary</label>
+           <label for="secondIncome">Basic Salary Annual Gross</label>
          <input type="text" class="form-control" id="secondIncome">
        </div>
        <div class="col-6">
-           <label for="secondBonus">Bonus Income</label>
+           <label for="secondBonus">Bonus Annual Gross</label>
          <input type="text" class="form-control" id="secondBonus">
        </div>
      </div>
     </div>
+     <div class="row">
+       <div class="col">
+         <button class="btn btn-success totalBorrow">Submit</button>
+       </div>
+     </div>
 
-    <button class="btn btn-success totalBorrow">Submit</button>
 
-    <div id="maxBorrow" class="youCouldBorrow"> You could borrow up to <span id="totLoan"></span> </div>
+    <div id="maxBorrow" class="youCouldBorrow"> <p class="maxBorrowP">As a guide you could roughly Borrow up to </p>
+                                                <p id="totLoan"></p>
+                                                 <p class="maxBorrowP">Want to know more call <span>02838 350077</span> or <a href="" class="btn btn-success" data-toggle="modal" data-target="#modal-enquire">Enquire Now</a></p>
+
+    </div>
 
     </div>
   </div>

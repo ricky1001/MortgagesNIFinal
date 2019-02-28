@@ -7980,14 +7980,47 @@ h1 {
 p {
   text-align: justify; }
 
+.addSecondApp {
+  font-size: 1.2rem; }
+
 .secondAppInput {
-  display: none; }
+  display: none;
+  margin-bottom: 2rem; }
 
 .secondAppInputDisplay {
-  display: block; }
+  display: block;
+  margin-bottom: 1rem; }
 
 .youCouldBorrow {
   display: none; }
 
 .youCouldBorrowShow {
   display: block; }
+
+#secondAppHidden {
+  margin-top: 1rem; }
+
+.totalBorrow {
+  float: right;
+  margin-bottom: 1rem; }
+
+#maxBorrow {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  background-color: #2d0845;
+  width: 100%;
+  color: #ffffff; }
+  #maxBorrow .maxBorrowP {
+    font-size: 1.7rem;
+    font-weight: 500;
+    width: 100%;
+    text-align: center; }
+    #maxBorrow .maxBorrowP span {
+      color: #cf8b17; }
+  #maxBorrow #totLoan {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center; }

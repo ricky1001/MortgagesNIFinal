@@ -2,11 +2,12 @@ make mortgage calculators
 
 make the rates table 
 
-look for better images for the whole site
+look for better images for the whole site **
 
 Add a logo 
 
-Add a robots.txt file 
+Add a robots.txt file **
+Add rules to robots.txt file
 
 Add key words to metadata
 
