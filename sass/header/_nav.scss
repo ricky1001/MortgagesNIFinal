@@ -209,8 +209,7 @@
       display: inline-block;
 
       @include media-breakpoint-down(xs){
-        width: 80%;
-
+        width: 70%;
       }
 
       & img{
