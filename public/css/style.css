@@ -7446,7 +7446,7 @@ a.text-dark:hover, a.text-dark:focus {
     display: inline-block; }
     @media (max-width: 575.98px) {
       .nav-sm-logo-box {
-        width: 70%; } }
+        width: 75%; } }
     .nav-sm-logo-box img {
       position: relative;
       width: 100%;
@@ -7456,7 +7456,7 @@ a.text-dark:hover, a.text-dark:focus {
       margin-left: 2rem; }
       @media (max-width: 575.98px) {
         .nav-sm-logo-box img {
-          margin-left: .5rem; } }
+          margin-left: .2rem; } }
   .nav-sm-icon-box {
     position: absolute;
     right: 0rem;

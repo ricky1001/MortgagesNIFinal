@@ -209,7 +209,7 @@
       display: inline-block;
 
       @include media-breakpoint-down(xs){
-        width: 70%;
+        width: 75%;
       }
 
       & img{
@@ -220,7 +220,7 @@
         transform: translateY(-50%);
         margin-left: 2rem;
         @include media-breakpoint-down(xs){
-          margin-left: .5rem;
+          margin-left: .2rem;
         }
       }
     }
