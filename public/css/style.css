@@ -7305,7 +7305,7 @@ a.text-dark:hover, a.text-dark:focus {
 .nav-top {
   position: relative;
   height: 2rem;
-  background-color: #2d0845;
+  background-color: #4d1a72;
   width: 100%;
   z-index: 1; }
   .nav-top .item-list {
@@ -7345,16 +7345,34 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-middle {
   position: relative;
-  height: 5rem;
+  height: 7rem;
   width: 100%;
-  background-color: #9f31e8;
+  background-color: #2d0845;
   z-index: 2; }
+  .nav-middle-logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 6rem;
+    margin-left: 5rem;
+    display: inline-block; }
+    @media (max-width: 1199.98px) {
+      .nav-middle-logo {
+        width: 40%;
+        margin-left: 3rem; } }
+    .nav-middle-logo img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 100%;
+      width: 100%; }
   .nav-middle-contact {
     position: relative;
     float: right;
     right: 3rem;
     height: 4rem;
-    background-color: #2d0845;
+    background-color: #4d1a72;
     top: 50%;
     transform: translateY(-50%);
     width: 40%;
@@ -7380,7 +7398,7 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   height: 2.5rem;
   width: 100%;
-  background-color: #2d0845;
+  background-color: #4d1a72;
   z-index: 3; }
   .nav-bottom span {
     position: relative;
@@ -7421,9 +7439,26 @@ a.text-dark:hover, a.text-dark:focus {
   @media (min-width: 992px) {
     .nav-sm {
       display: none; } }
+  .nav-sm-logo-box {
+    position: relative;
+    width: 50%;
+    height: 6rem;
+    display: inline-block; }
+    @media (max-width: 575.98px) {
+      .nav-sm-logo-box {
+        display: block; } }
+    .nav-sm-logo-box img {
+      position: relative;
+      width: 100%;
+      height: 5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 2rem; }
   .nav-sm-icon-box {
     position: absolute;
     right: 0rem;
+    top: 0;
+    display: inline-block;
     text-align: right;
     width: 20%;
     height: 6rem; }
