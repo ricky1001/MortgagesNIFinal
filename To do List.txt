@@ -1,38 +1,57 @@
-make mortgage calculators
-
-make the rates table 
-
-look for better images for the whole site **
-
-Add a logo 
-
-Add a robots.txt file **
-Add rules to robots.txt file
-
-Add key words to metadata
-
-add Home mover content 1 page for now
-
-Make an about us page add meet the team etc
+Has to be done !!!
 
 Buy vectored image for the home page so that it scales on bigger screens as it is currently repeating 
 
+Fix all header tags on all pages so that they flow from h1 - h2 etc
+
+make mortgage calculators
+
+Make sure that the navigation works on xs screens 
+
+
+
+**After the site goes live **
+
 Add oauth2 to the forms 
 
-Fix all header tags on all pages so that they flow from h1 - h2 etc
+Make sure that the ssl certificate from mortgageadviserni is working
+
+
+
+
+
+Can be done at a later date
+
+Make an about us page add meet the team etc
+
+Add rules to robots.txt file 
+
+Create a Landing page for First Time Buyer marketing page it should include calculators, AIP Link
 
 Come up with a way to organise all of the blog posts 
 1. so that they display in order of the date they were created
 2. So that they can be searched for ie tagged with First Time Buyer / Buy to Let etc
 
-Creat a Landing page for First Time Buyer marketing page it should include calculators, AIP Link
-
 Create a multi page form like a type form with a mortgage questionnaire
 
 Create a multi page form with a medical questionnaire
 
+make the rates table 
+
+Get mum to proof read the entire site
 
 
+Done!!!!!
+
+fix the form on mobile phones inputs should stack **
+
+Check the entire site for spelling and links to make sure that everything works. **
+
+look for better images for the whole site **
+
+Add a logo **
+
+Add a robots.txt file **
 
 add another post for mortgage advice so the content on the home page is full **
 

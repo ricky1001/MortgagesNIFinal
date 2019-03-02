@@ -68,6 +68,15 @@
          font-weight: 500;
          color: $color-white;
 
+         & a{
+            color: $color-white;
+    
+            &:hover{
+                color: $tertiary-orange-dark;
+                text-decoration: none;
+            }
+        }
+
          @include media-breakpoint-down(sm){
              font-size: 1rem;
          }

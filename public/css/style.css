@@ -7281,7 +7281,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: none; }
 
 .message-sent {
-  color: #ffffff;
+  color: #ff7f27;
   text-align: center;
   font-weight: 500;
   font-size: 1.3rem;
@@ -7392,7 +7392,7 @@ a.text-dark:hover, a.text-dark:focus {
       font-weight: 700;
       letter-spacing: 2px;
       font-size: 1.4rem;
-      color: #e8a431; }
+      color: #ff7f27; }
 
 .nav-bottom {
   position: relative;
@@ -7400,22 +7400,10 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
   background-color: #4d1a72;
   z-index: 3; }
-  .nav-bottom span {
-    position: relative;
-    height: 2.5rem; }
-    .nav-bottom span i {
-      position: relative;
-      top: 50%;
-      left: 3rem;
-      transform: translateY(-50%);
-      font-size: 1.5rem;
-      color: #ffffff; }
-      .nav-bottom span i:hover {
-        color: #cf8b17; }
   .nav-bottom ul {
     position: relative;
     height: 2.5rem;
-    width: 90%;
+    width: 100%;
     float: right; }
     .nav-bottom ul li {
       position: relative;
@@ -7425,7 +7413,7 @@ a.text-dark:hover, a.text-dark:focus {
       font-weight: 500;
       color: #ffffff;
       font-size: 1rem;
-      width: 14.5%;
+      width: 19%;
       text-align: center;
       top: 50%;
       transform: translateY(-50%); }
@@ -7548,6 +7536,11 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 1.2rem;
       font-weight: 500;
       color: #ffffff; }
+      .footer-top-row-item a {
+        color: #ffffff; }
+        .footer-top-row-item a:hover {
+          color: #cf8b17;
+          text-decoration: none; }
       @media (max-width: 767.98px) {
         .footer-top-row-item {
           font-size: 1rem; } }
@@ -7975,7 +7968,7 @@ a.text-dark:hover, a.text-dark:focus {
           color: #9f31e8; }
 
 .orangeHighlight {
-  color: #cf8b17; }
+  color: #ff7f27; }
 
 .contact-us-page-form {
   background-color: #2d0845;
