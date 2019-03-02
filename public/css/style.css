@@ -7978,7 +7978,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: #ffffff; }
 
 @media (max-width: 575.98px) {
-  .modal-body {
+  .modal-body form {
     width: 100%; } }
 
 .contact-us {

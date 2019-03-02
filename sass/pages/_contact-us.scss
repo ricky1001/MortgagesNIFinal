@@ -12,9 +12,13 @@
 }
 
 .modal-body{
-    @include media-breakpoint-down(xs){
-        width: 100%;
+
+    & form{
+        @include media-breakpoint-down(xs){
+            width: 100%;
+        }
     }
+
 }
 
 .contact-us{
