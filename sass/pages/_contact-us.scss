@@ -11,6 +11,12 @@
 
 }
 
+.modal-body{
+    @include media-breakpoint-down(xs){
+        width: 100%;
+    }
+}
+
 .contact-us{
     position: relative;
     width: 100%;

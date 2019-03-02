@@ -7977,6 +7977,10 @@ a.text-dark:hover, a.text-dark:focus {
   .contact-us-page-form label {
     color: #ffffff; }
 
+@media (max-width: 575.98px) {
+  .modal-body {
+    width: 100%; } }
+
 .contact-us {
   position: relative;
   width: 100%;
