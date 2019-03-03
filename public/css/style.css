@@ -7797,29 +7797,29 @@ a.text-dark:hover, a.text-dark:focus {
     @media (max-width: 575.98px) {
       .mortgage-types-card {
         height: 16rem; } }
-    .mortgage-types-card .tops {
+    .mortgage-types-card .top {
       position: relative;
       height: 34%;
       font-weight: 500;
       font-size: 1.5rem; }
       @media (max-width: 1199.98px) {
-        .mortgage-types-card .tops {
+        .mortgage-types-card .top {
           font-size: 1.3rem;
           height: 27%; } }
-      .mortgage-types-card .tops p {
+      .mortgage-types-card .top p {
         line-height: 1.5rem; }
-      .mortgage-types-card .tops i {
+      .mortgage-types-card .top i {
         position: absolute;
         right: .6rem;
         top: .6rem;
         font-size: 2.2rem; }
-      .mortgage-types-card .tops-ftb {
+      .mortgage-types-card .top-ftb {
         color: #B9D9FF; }
-      .mortgage-types-card .tops-home-mover {
+      .mortgage-types-card .top-home-mover {
         color: #ff8f86; }
-      .mortgage-types-card .tops-remortgage {
+      .mortgage-types-card .top-remortgage {
         color: #efbf6e; }
-      .mortgage-types-card .tops-btl {
+      .mortgage-types-card .top-btl {
         color: #f0ff75; }
     .mortgage-types-card .middle {
       height: 33%;
