@@ -222,6 +222,8 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 
+
+
     &-item{
         position: relative;
         background-color: $primary-purple-dark;
@@ -229,15 +231,50 @@
         height: 18rem;
         padding: 1rem;
 
+        @include media-breakpoint-down(lg){
+            margin-bottom: 2rem;
+        }
+
+        &-upper{
+
+            &-ftb{
+                color: $secondary-blue-light;
+            }
+
+            &-btl{
+                color: $tertiary-red-light;
+            }
+
+            &-remortgage{
+                color: $tertiary-orange-light;
+            }
+
+            &-selfBuild{
+                color: $tertiary-yellow-light;
+            }
+         }
+
         & i {
             position: absolute;
             right: 1rem;
             top: 1rem;
             font-size: 2rem;
+
+            @include media-breakpoint-down(lg){
+                font-size: 2.4rem;
+            }
         }
 
         & h6{
             font-size: 1.5rem;
+
+            @include media-breakpoint-down(lg){
+                font-size: 1.3rem;
+            }
+
+            @include media-breakpoint-down(md){
+                font-size: 1.7rem;
+            }
         }
 
         &-middle{
@@ -246,8 +283,16 @@
         }
 
         &-bottom{
-           position: relative;
-           top: 3.5rem;
+           position: absolute;
+        bottom: 1rem;
+
+           & a{
+            padding: .7rem;
+            background-color: $tertiary-orange-dark;
+            font-weight: 500;
+            color: $color-white;
+
+           }
         }
     }
 }

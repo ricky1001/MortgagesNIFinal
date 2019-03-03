@@ -7756,19 +7756,44 @@ a.text-dark:hover, a.text-dark:focus {
     color: #ffffff;
     height: 18rem;
     padding: 1rem; }
+    @media (max-width: 1199.98px) {
+      .mtype-item {
+        margin-bottom: 2rem; } }
+    .mtype-item-upper-ftb {
+      color: #B9D9FF; }
+    .mtype-item-upper-btl {
+      color: #ff8f86; }
+    .mtype-item-upper-remortgage {
+      color: #efbf6e; }
+    .mtype-item-upper-selfBuild {
+      color: #f0ff75; }
     .mtype-item i {
       position: absolute;
       right: 1rem;
       top: 1rem;
       font-size: 2rem; }
+      @media (max-width: 1199.98px) {
+        .mtype-item i {
+          font-size: 2.4rem; } }
     .mtype-item h6 {
       font-size: 1.5rem; }
+      @media (max-width: 1199.98px) {
+        .mtype-item h6 {
+          font-size: 1.3rem; } }
+      @media (max-width: 991.98px) {
+        .mtype-item h6 {
+          font-size: 1.7rem; } }
     .mtype-item-middle {
       position: relative;
       top: 2rem; }
     .mtype-item-bottom {
-      position: relative;
-      top: 3.5rem; }
+      position: absolute;
+      bottom: 1rem; }
+      .mtype-item-bottom a {
+        padding: .7rem;
+        background-color: #cf8b17;
+        font-weight: 500;
+        color: #ffffff; }
 
 /*
 .mortgage-types{
