@@ -7747,99 +7747,177 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-.mortgage-types {
-  position: relative;
-  width: 100%;
-  padding-bottom: 4rem;
-  padding-top: 2rem; }
-  .mortgage-types-card {
-    width: 100%;
+.mtype {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .mtype-item {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #2d0845;
-    padding: 1rem;
-    border-radius: 3px;
+    color: #ffffff;
     height: 18rem;
-    box-shadow: 0 10px 10px 3px rgba(0, 0, 0, 0.17); }
-    @media (max-width: 991.98px) {
-      .mortgage-types-card {
-        height: 14rem;
-        margin-bottom: 2rem; } }
-    @media (max-width: 767.98px) {
-      .mortgage-types-card {
-        height: 18rem; } }
-    @media (max-width: 575.98px) {
-      .mortgage-types-card {
-        height: 16rem; } }
-    .mortgage-types-card .top {
-      position: relative;
-      height: 34%;
-      font-weight: 500;
+    padding: 1rem; }
+    .mtype-item i {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-size: 2rem; }
+    .mtype-item h6 {
       font-size: 1.5rem; }
-      @media (max-width: 1199.98px) {
-        .mortgage-types-card .top {
-          font-size: 1.3rem;
-          height: 27%; } }
-      .mortgage-types-card .top p {
-        line-height: 1.5rem; }
-      .mortgage-types-card .top i {
-        position: absolute;
-        right: .6rem;
-        top: .6rem;
-        font-size: 2.2rem; }
-      .mortgage-types-card .top-ftb {
-        color: #B9D9FF; }
-      .mortgage-types-card .top-home-mover {
-        color: #ff8f86; }
-      .mortgage-types-card .top-remortgage {
-        color: #efbf6e; }
-      .mortgage-types-card .top-btl {
-        color: #f0ff75; }
-    .mortgage-types-card .middle {
-      height: 33%;
-      color: #ffffff;
-      font-size: 1.1rem; }
-      @media (max-width: 1199.98px) {
-        .mortgage-types-card .middle {
-          height: 40%; } }
-    .mortgage-types-card .bottom {
+    .mtype-item-middle {
       position: relative;
-      height: 33%; }
-      .mortgage-types-card .bottom-ftb a {
-        position: absolute;
-        bottom: 0rem;
-        left: 0rem;
-        padding: .7rem;
-        background-color: #cf8b17;
-        font-weight: 500;
-        color: #ffffff; }
-      .mortgage-types-card .bottom-home-mover a {
-        position: absolute;
-        bottom: 0rem;
-        left: 0rem;
-        padding: .7rem;
-        background-color: #cf8b17;
-        font-weight: 500;
-        color: #ffffff; }
-      .mortgage-types-card .bottom-remortgage a {
-        position: absolute;
-        bottom: 0rem;
-        left: 0rem;
-        padding: .7rem;
-        background-color: #cf8b17;
-        font-weight: 500;
-        color: #ffffff; }
-      .mortgage-types-card .bottom-btl a {
-        position: absolute;
-        bottom: 0rem;
-        left: 0rem;
-        padding: .7rem;
-        background-color: #cf8b17;
-        font-weight: 500;
-        color: #ffffff; }
+      top: 2rem; }
+    .mtype-item-bottom {
+      position: relative;
+      top: 3.5rem; }
 
+/*
+.mortgage-types{
+    position: relative;
+    width: 100%;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+
+
+    &-card{
+        width: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $primary-purple-dark;
+
+        padding: 1rem;
+        border-radius: 3px;
+        height: 18rem;
+        box-shadow: 0 10px 10px 3px rgba(0, 0, 0, 0.17);
+
+        @include media-breakpoint-down(md){
+            height:14rem;
+            margin-bottom: 2rem;
+        }
+
+        @include media-breakpoint-down(sm){
+            height:18rem;
+        }
+
+        @include media-breakpoint-down(xs){
+            height:16rem;
+        }
+
+        & .top{
+          position: relative;
+          height: 34%;
+          font-weight: 500;
+          font-size: 1.5rem;
+
+          @include media-breakpoint-down(lg){
+              font-size: 1.3rem;
+              height: 27%;
+          }
+
+          & p{
+              line-height: 1.5rem;
+          }
+
+          & i{
+              position: absolute;
+              right: .6rem;
+              top: .6rem;
+              font-size: 2.2rem;
+          }
+           
+          &-ftb{
+           color: $secondary-blue-light;
+          }
+
+          &-home-mover{
+            color: $tertiary-red-light;
+          }
+
+          &-remortgage{
+              color: $tertiary-orange-light;
+          }
+
+          &-btl{
+              color: $tertiary-yellow-light;
+          }
+
+        }
+
+        & .middle{
+          height: 33%;
+          color: $color-white;
+          font-size: 1.1rem;
+
+          @include media-breakpoint-down(lg){
+              height: 40%
+          }
+        }
+
+        & .bottom{
+          position: relative;
+          height: 33%;
+
+          &-ftb{
+
+            & a{
+                position: absolute;
+                bottom: 0rem;
+                left: 0rem;
+                padding: .7rem;
+                background-color: $tertiary-orange-dark;
+                font-weight: 500;
+                color: $color-white;
+            }
+          }
+
+          
+          &-home-mover{
+
+            & a{
+                position: absolute;
+                bottom: 0rem;
+                left: 0rem;
+                padding: .7rem;
+                background-color: $tertiary-orange-dark;
+                font-weight: 500;
+                color: $color-white;
+            }
+          }
+
+          &-remortgage{
+
+            & a{
+                position: absolute;
+                bottom: 0rem;
+                left: 0rem;
+                padding: .7rem;
+                background-color: $tertiary-orange-dark;
+                font-weight: 500;
+                color: $color-white;
+            }
+          }
+
+          &-btl{
+
+            & a{
+                position: absolute;
+                bottom: 0rem;
+                left: 0rem;
+                padding: .7rem;
+                background-color: $tertiary-orange-dark;
+                font-weight: 500;
+                color: $color-white;
+            }
+          }
+
+          
+
+
+        }
+    }
+}
+*/
 .main {
   margin-top: 1rem; }
   .main p {

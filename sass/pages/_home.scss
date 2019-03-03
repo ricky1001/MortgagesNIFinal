@@ -218,6 +218,42 @@
     }
 }
 
+.mtype{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &-item{
+        position: relative;
+        background-color: $primary-purple-dark;
+        color: $color-white;
+        height: 18rem;
+        padding: 1rem;
+
+        & i {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: 2rem;
+        }
+
+        & h6{
+            font-size: 1.5rem;
+        }
+
+        &-middle{
+            position: relative;
+            top: 2rem;
+        }
+
+        &-bottom{
+           position: relative;
+           top: 3.5rem;
+        }
+    }
+}
+
+
+/*
 .mortgage-types{
     position: relative;
     width: 100%;
@@ -364,3 +400,4 @@
         }
     }
 }
+*/
