@@ -4,10 +4,9 @@ Buy vectored image for the home page so that it scales on bigger screens as it i
 
 Fix all header tags on all pages so that they flow from h1 - h2 etc
 
-make mortgage calculators
+Add a bit more content to how much can i borrow calculator
 
-Make sure that the navigation works on xs screens 
-
+fix images on home page for mortgage advice section
 
 
 **After the site goes live **
@@ -21,6 +20,10 @@ Make sure that the ssl certificate from mortgageadviserni is working
 
 
 Can be done at a later date
+
+Optimize images on the site for size etc
+
+make mortgage calculators
 
 Make an about us page add meet the team etc
 
@@ -42,6 +45,8 @@ Get mum to proof read the entire site
 
 
 Done!!!!!
+
+Make sure that the navigation works on xs screens **
 
 fix the form on mobile phones inputs should stack **
 

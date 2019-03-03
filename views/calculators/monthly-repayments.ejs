@@ -1,0 +1,61 @@
+<% include ../partials/heads %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>How much will your monthly Repayments be ?</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>
+            Our UK mortgage repayment calculator gives you an estimate of what your monthly mortgage payments might be based on the interest rate, so you can calculate how much mortgage you can afford.
+      <br> <br>
+            Enter the amount you want to borrow, the interest rate and select a mortgage type to find out how much you will have to repay each month. 
+      </p>
+    </div>
+    <div class="col-sm-8">
+      <div class="row">
+       <div class="col-8">
+           <label for="CBloanAmount">How much do you want to Borrow ?</label>
+         <input type="text" class="form-control" id="CBloanAmount">
+       </div>
+       <div class="col-4">
+           <label for="CBinterestRate">What's the Interest Rate</label>
+         <input type="text" class="form-control" id="CBinterestRate" placeholder="Your Rate %">
+       </div>
+     </div>
+
+      <div class="row mt-4">
+       <div class="col-12">
+           <label for="CBmortgageTerm">Your Mortgage Term in years !</label>
+         <input type="text" class="form-control" id="CBmortgageTerm" placeholder="25 Years">
+       </div>
+    </div>
+     <div class="row mt-4">
+        <div class="col-12">    
+            <label for="inputGroupSelect01">Mortgage Type</label>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Repayment</option>
+                  <option value="1">Interest Only</option>
+                </select>        
+        </div>
+     </div>
+
+     <div class="row mt-3 mb-3">
+       <div class="col">
+         <button class="btn btn-success CBmonthlyRepaybtn">Submit</button>
+       </div>
+     </div>
+
+
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<% include ../partials/footer %>

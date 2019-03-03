@@ -9,11 +9,25 @@ router.get("/calculators", function(req, res){
                                          );
 });
 
+//Before you Apply Routes
+
+//How Much can I borrow Route 
+
 router.get("/calculators/how-much-can-i-borrow", function(req, res){
   res.render("./calculators/how-much-can-i-borrow", {
                                           metatitle: "Mortgage Calculators NI | Mortgages Northern Ireland",
                                           metadescription: "Work out how much you could borrow, what your repayments would be and more with our mortgage calculators",
                                           maxLoan : ""
+                                           }
+                                         );
+});
+
+//Monthly repayments 
+
+router.get("/calculators/monthly-repayments", function(req, res){
+  res.render("./calculators/monthly-repayments", {
+                                          metatitle: "Monthly Repayment mortgage calculator | Mortgages Northern Ireland",
+                                          metadescription: "Work out what your monthly mortgage repayments would be with Mortgages Northern Irelands repayment calculator"
                                            }
                                          );
 });

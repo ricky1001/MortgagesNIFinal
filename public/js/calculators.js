@@ -1,3 +1,4 @@
+//How Much can I Borrow
 var show = document.querySelector(".addSecondApp");
 
 show.addEventListener("click", function(){
@@ -49,8 +50,8 @@ showMax.className = "youCouldBorrowShow";
 var sp = document.getElementById("totLoan");
 sp.innerHTML = "£" + maxLoan.toLocaleString('en');
 
-
-
-
-
 });
+
+
+//Monthly Repayments 
+
