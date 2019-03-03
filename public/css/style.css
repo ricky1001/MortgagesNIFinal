@@ -7737,39 +7737,15 @@ a.text-dark:hover, a.text-dark:focus {
           .time-bottom div .middle {
             font-size: 1.2rem; } }
 
-.about {
-  width: 100%;
-  padding: 2rem;
+.about .container-fluid {
   background-color: #2d0845;
-  margin-bottom: 2rem; }
-  @media (max-width: 575.98px) {
-    .about-container {
-      padding: 1rem 0rem; } }
-  .about-row {
-    background-color: #ffffff;
-    border-radius: 5px;
-    text-align: justify; }
-    .about-row-title {
-      padding-top: 2rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      padding-bottom: .5rem;
-      font-weight: 500;
-      font-size: 2rem;
-      color: #2d0845; }
-      @media (max-width: 575.98px) {
-        .about-row-title {
-          font-size: 1.5rem; } }
-    .about-row-content {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      padding-bottom: 2rem;
-      font-size: 1.1rem; }
-      @media (max-width: 575.98px) {
-        .about-row-content {
-          padding-left: .4rem;
-          padding-right: .4rem;
-          padding-bottom: .4rem; } }
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.about .container {
+  background-color: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .mortgage-types {
   position: relative;

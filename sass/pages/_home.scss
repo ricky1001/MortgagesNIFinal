@@ -204,50 +204,17 @@
 }
 
 .about{
-    width: 100%;
-    padding:2rem;
-    background-color: $primary-purple-dark;
-    margin-bottom:2rem;
 
-    &-container{
-        @include media-breakpoint-down(xs){
-            padding:1rem 0rem;
-        }
+    & .container-fluid{
+        background-color: $primary-purple-dark;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
-    &-row {
+    & .container{
         background-color: $color-white;
-        border-radius: 5px;
-        text-align: justify;
-        
-        &-title{
-            padding-top: 2rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            padding-bottom: .5rem;
-
-            font-weight: 500;
-            font-size: 2rem;
-            color: $primary-purple-dark;
-
-            @include media-breakpoint-down(xs){
-                font-size: 1.5rem;
-            }
-        }
-
-        &-content{
-            padding-left: 2rem;
-            padding-right: 2rem;
-            padding-bottom: 2rem;
-
-            font-size: 1.1rem;
-
-            @include media-breakpoint-down(xs){
-                padding-left: .4rem;
-                padding-right: .4rem;
-                padding-bottom: .4rem;
-            }
-        }
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 }
 
