@@ -7530,7 +7530,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 1.2rem; }
   @media (max-width: 575.98px) {
     .footer-upper-row {
-      font-size: .8rem; } }
+      font-size: 1rem; } }
   .footer-upper-row a {
     color: #ffffff; }
     .footer-upper-row a:hover {
