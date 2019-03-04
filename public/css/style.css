@@ -7519,88 +7519,168 @@ a.text-dark:hover, a.text-dark:focus {
     left: 50%;
     transform: translateX(-50%); }
 
-.footer {
+.footer-upper {
+  background-color: #1f253d; }
+
+.footer-upper-row {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  height: 70%;
   position: relative;
-  width: 100%; }
-  .footer .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px; }
-  .footer-top-row {
-    position: relative;
-    background-color: #1f253d; }
-    .footer-top-row-item {
-      position: relative;
-      text-align: center;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: #ffffff; }
-      .footer-top-row-item a {
-        color: #ffffff; }
-        .footer-top-row-item a:hover {
-          color: #cf8b17;
-          text-decoration: none; }
-      @media (max-width: 767.98px) {
-        .footer-top-row-item {
-          font-size: 1rem; } }
-  .footer-main {
-    background-color: #293151;
-    padding-bottom: 2rem; }
-  .footer .middle-top {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 2rem; }
-    @media (max-width: 767.98px) {
-      .footer .middle-top {
-        padding-top: .5rem;
-        width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-align: center; } }
-  .footer .warning {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translateY(-50%); }
+
+.footer-main {
+  background-color: #293151;
+  padding-top: 2rem; }
+  .footer-main-warning {
     background-color: #1f253d;
     color: #ffffff;
     padding: 1rem; }
-  .footer-service {
-    color: #ffffff;
-    padding-top: 1rem; }
-  .footer-middle-icons {
-    text-align: center;
-    padding-top: 2rem; }
-    @media (max-width: 575.98px) {
-      .footer-middle-icons {
-        padding-left: 1rem;
-        padding-right: 1rem; } }
-    .footer-middle-icons-item {
+  .footer-main-advice {
+    color: #ffffff; }
+  .footer-main-icons {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    background-color: #1f253d;
+    display: inline-block;
+    color: #ffffff; }
+    .footer-main-icons i {
       position: relative;
-      width: 4rem;
-      height: 4rem;
-      background-color: #1f253d;
-      display: inline-block;
-      margin: .4rem; }
-      .footer-middle-icons-item i {
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2.5rem; }
+    .footer-main-icons-col {
+      text-align: center;
+      padding-top: 2rem; }
+  .footer-main-bottom {
+    padding-top: 2rem;
+    text-align: center;
+    color: #ffffff; }
+
+/*
+.footer{
+    position: relative;
+    width: 100%;
+
+    & .container-fluid{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+
+
+    &-top-row{
+        position: relative;
+        background-color: $footer-dark;
+
+        &-item{
+         position: relative;
+         text-align: center;
+         top: 50%;
+         transform: translateY(-50%);
+         font-size: 1.2rem;
+         font-weight: 500;
+         color: $color-white;
+
+         & a{
+            color: $color-white;
+    
+            &:hover{
+                color: $tertiary-orange-dark;
+                text-decoration: none;
+            }
+        }
+
+         @include media-breakpoint-down(sm){
+             font-size: 1rem;
+         }
+
+        }
+    }
+
+    &-main{
+        background-color: $footer-light;
+        padding-bottom: 2rem;
+    }
+
+    & .middle-top{
+     padding-left: 5rem;
+     padding-right: 5rem;
+     padding-top: 2rem;
+
+     @include media-breakpoint-down(sm){
+      padding-top: .5rem;
+      width: 100%;
+      padding-left:1rem;
+      padding-right:1rem;
+      text-align: center;
+     }
+
+    }
+
+    & .warning{
         position: relative;
         top: 50%;
-        transform: translateY(-50%);
-        font-size: 2rem;
-        color: #ffffff; }
-    .footer-middle-icons p {
-      text-align: center;
-      color: #ffffff;
-      padding-left: 6rem;
-      padding-right: 6rem;
-      padding-top: 3rem; }
-      @media (max-width: 575.98px) {
-        .footer-middle-icons p {
-          padding-left: 1rem;
-          padding-right: 1rem; } }
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: $footer-dark;
+        color: $color-white;
+        padding: 1rem;
+    }
 
+    &-service{
+        color: $color-white;
+        padding-top: 1rem;
+    }
+
+    &-middle-icons{
+        text-align: center;
+        padding-top: 2rem;
+
+        @include media-breakpoint-down(xs){
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+
+        &-item{
+            position: relative;
+            width: 4rem;
+            height:4rem;
+            background-color: $footer-dark;
+            display: inline-block;
+            margin: .4rem;
+
+            & i{
+                position: relative;
+                top: 50%;
+                transform:translateY(-50%);
+                font-size: 2rem;
+                color: $color-white;
+
+            }
+        }
+
+        & p{
+            text-align: center;
+            color: $color-white;
+            padding-left: 6rem;
+            padding-right: 6rem;
+            padding-top: 3rem;
+
+            @include media-breakpoint-down(xs){
+                padding-left:1rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+
+}*/
 .process {
   width: 100%;
   z-index: 7;
@@ -7795,154 +7875,6 @@ a.text-dark:hover, a.text-dark:focus {
         font-weight: 500;
         color: #ffffff; }
 
-/*
-.mortgage-types{
-    position: relative;
-    width: 100%;
-    padding-bottom: 4rem;
-    padding-top: 2rem;
-
-
-    &-card{
-        width: 100%;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: $primary-purple-dark;
-
-        padding: 1rem;
-        border-radius: 3px;
-        height: 18rem;
-        box-shadow: 0 10px 10px 3px rgba(0, 0, 0, 0.17);
-
-        @include media-breakpoint-down(md){
-            height:14rem;
-            margin-bottom: 2rem;
-        }
-
-        @include media-breakpoint-down(sm){
-            height:18rem;
-        }
-
-        @include media-breakpoint-down(xs){
-            height:16rem;
-        }
-
-        & .top{
-          position: relative;
-          height: 34%;
-          font-weight: 500;
-          font-size: 1.5rem;
-
-          @include media-breakpoint-down(lg){
-              font-size: 1.3rem;
-              height: 27%;
-          }
-
-          & p{
-              line-height: 1.5rem;
-          }
-
-          & i{
-              position: absolute;
-              right: .6rem;
-              top: .6rem;
-              font-size: 2.2rem;
-          }
-           
-          &-ftb{
-           color: $secondary-blue-light;
-          }
-
-          &-home-mover{
-            color: $tertiary-red-light;
-          }
-
-          &-remortgage{
-              color: $tertiary-orange-light;
-          }
-
-          &-btl{
-              color: $tertiary-yellow-light;
-          }
-
-        }
-
-        & .middle{
-          height: 33%;
-          color: $color-white;
-          font-size: 1.1rem;
-
-          @include media-breakpoint-down(lg){
-              height: 40%
-          }
-        }
-
-        & .bottom{
-          position: relative;
-          height: 33%;
-
-          &-ftb{
-
-            & a{
-                position: absolute;
-                bottom: 0rem;
-                left: 0rem;
-                padding: .7rem;
-                background-color: $tertiary-orange-dark;
-                font-weight: 500;
-                color: $color-white;
-            }
-          }
-
-          
-          &-home-mover{
-
-            & a{
-                position: absolute;
-                bottom: 0rem;
-                left: 0rem;
-                padding: .7rem;
-                background-color: $tertiary-orange-dark;
-                font-weight: 500;
-                color: $color-white;
-            }
-          }
-
-          &-remortgage{
-
-            & a{
-                position: absolute;
-                bottom: 0rem;
-                left: 0rem;
-                padding: .7rem;
-                background-color: $tertiary-orange-dark;
-                font-weight: 500;
-                color: $color-white;
-            }
-          }
-
-          &-btl{
-
-            & a{
-                position: absolute;
-                bottom: 0rem;
-                left: 0rem;
-                padding: .7rem;
-                background-color: $tertiary-orange-dark;
-                font-weight: 500;
-                color: $color-white;
-            }
-          }
-
-          
-
-
-        }
-    }
-}
-*/
 .main {
   margin-top: 1rem; }
   .main p {
