@@ -8,6 +8,8 @@ Add a bit more content to how much can i borrow calculator
 
 fix images on home page for mortgage advice section
 
+add links to the mortgage advice section they currently go no where also fix substring on ipad
+
 
 **After the site goes live **
 
