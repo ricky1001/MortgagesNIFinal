@@ -7527,11 +7527,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
   text-align: center;
   color: #ffffff;
-  font-size: 1.2rem;
-  height: 70%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
+  font-size: 1.2rem; }
 
 .footer-main {
   background-color: #293151;
