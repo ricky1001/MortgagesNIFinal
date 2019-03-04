@@ -7520,7 +7520,8 @@ a.text-dark:hover, a.text-dark:focus {
     transform: translateX(-50%); }
 
 .footer-upper {
-  background-color: #1f253d; }
+  background-color: #1f253d;
+  position: relative; }
 
 .footer-upper-row {
   width: 100%;
