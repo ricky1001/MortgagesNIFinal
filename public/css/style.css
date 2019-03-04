@@ -7528,6 +7528,11 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center;
   color: #ffffff;
   font-size: 1.2rem; }
+  .footer-upper-row a {
+    color: #ffffff; }
+    .footer-upper-row a:hover {
+      color: #cf8b17;
+      text-decoration: none; }
 
 .footer-main {
   background-color: #293151;

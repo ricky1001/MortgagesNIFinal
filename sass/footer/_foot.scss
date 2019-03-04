@@ -54,6 +54,15 @@
         color: $color-white;
         font-size: 1.2rem;
 
+        & a{
+            color: $color-white;
+    
+            &:hover{
+                color: $tertiary-orange-dark;
+                text-decoration: none;
+            }
+        }
+
 
     }
 
