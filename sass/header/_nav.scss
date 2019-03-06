@@ -126,7 +126,11 @@
             font-weight: 700;
             letter-spacing: 2px;
             font-size: 1.4rem;
-            color: $tertiary-orange-logo;
+            
+
+            & a{
+                color: $tertiary-orange-logo;
+            }
          }
 
         }

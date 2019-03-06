@@ -1,0 +1,64 @@
+<% include ../partials/heads %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Stamp Duty Calculator!</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>
+            First-time buyers don’t pay any stamp duty on properties priced up to £300,000 and will only pay 5% on any amount paid between £300,001 and £500,000.
+            <br><br>
+            Use our stamp duty calculator below to find out exactly how much tax you will pay when buying a main residential or secondary property in England, Wales or Northern Ireland.
+            <br><br>
+            This SDLT calculator works whether you’re a first-time buyer, a second home buyer or you are simply looking to move from one property to another. </p>
+    </div>
+    <div class="col-sm-8">
+      <div class="row">
+        <div class="col-12">
+            <label for="SDbuyerStatusID">Your Status</label>
+            <div class="form-group">
+                <select class="form-control" id="SDbuyerStatusID" class="SDbuyerStatus">
+                  <option>First Time Buyer</option>
+                  <option>Home Mover</option>
+                  <option>Further Properties ( You will own more than 1 property upon completion )</option>
+                </select>
+              </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+            <label for="SDloanAmountID">Loan Amount</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">£</span>
+              </div>
+              <input type="text" class="form-control" class="SDloanAmount" id="SDloanAmountID" aria-label="Amount (to the nearest dollar)">
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button class="btn btn-success calculateSD">Calculate</button>
+      
+
+        <div class="SDresult" id="SDresultID">
+          <p class="MRresultShow-p">Your stamp Duty would be</p>
+          <p id="SDcalc"></p> 
+          <p class="MRresultShow-p">Want to know more call <span><a href="tel:08009756476">0800 975 6476</a></span> <br> or <br> <a href="" class="btn btn-success" data-toggle="modal" data-target="#modal-enquire">Enquire Now</a></p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+   </div>
+ </div>
+
+
+
+
+<script src="/js/stamp-duty.js"></script>
+
+<% include ../partials/footer %>

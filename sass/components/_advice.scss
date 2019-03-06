@@ -40,6 +40,12 @@
                 width: 100%;
                 height: 8rem;
 
+
+
+                @include media-breakpoint-down(sm){
+                    height:14rem
+                }
+
                 @include media-breakpoint-down(xs){
                     height:12rem
                 }
@@ -64,6 +70,16 @@
              height: 13rem;
              @include media-breakpoint-down(xs){
                 height:11rem
+            }
+
+
+            &-a{
+                color: $primary-purple-dark;
+        
+                &:hover{
+                    color: $tertiary-orange-dark;
+                    text-decoration: none;
+                }
             }
 
 

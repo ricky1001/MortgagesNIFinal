@@ -32,6 +32,16 @@ router.get("/calculators/monthly-repayments", function(req, res){
                                          );
 });
 
+//Stamp Duty
+
+router.get("/calculators/stamp-duty-calculator", function(req, res){
+  res.render("./calculators/stamp-duty-calculator", {
+                                          metatitle: "Stamp Duty Calculator | Mortgages Northern Ireland",
+                                          metadescription: "Work out how much stamp duty you will have to pay with Mortgages Northern Irelands stamp duty calculator"
+                                           }
+                                         );
+});
+
 
 
 module.exports = router;
