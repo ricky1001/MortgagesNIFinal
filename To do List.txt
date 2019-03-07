@@ -1,10 +1,10 @@
+
 Has to be done !!!
 
 Buy vectored image for the home page so that it scales on bigger screens as it is currently repeating 
 
 Fix all header tags on all pages so that they flow from h1 - h2 etc
 
-Add a bit more content to how much can i borrow calculator
 
 
 **After the site goes live **
@@ -19,7 +19,7 @@ Make sure that the ssl certificate from mortgageadviserni is working
 
 Can be done at a later date
 
-Optimize all metatags
+Add a bit more content to how much can i borrow calculator
 
 Optimize images on the site for size etc
 
