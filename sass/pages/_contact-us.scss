@@ -28,18 +28,9 @@
     text-align: center;
 
     & p{
-
-
-
-
-        & span{
-            @include media-breakpoint-down(xs){
-                display: block;
-                width: 100%;
-                text-align: left;
-            }
+        @include media-breakpoint-down(xs){
+            font-size: .9rem;
         }
-
     }
 }
 
