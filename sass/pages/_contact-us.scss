@@ -34,6 +34,10 @@
         transform: translateX(-50%);
         text-align: center;
 
+        @include media-breakpoint-down (xs){
+            text-align: left;
+        }
+
         & span{
             @include media-breakpoint-down(xs){
                 font-size: .8rem;
