@@ -8024,6 +8024,9 @@ a.text-dark:hover, a.text-dark:focus {
     left: 50%;
     transform: translateX(-50%);
     text-align: center; }
+    @media (max-width: 575.98px) {
+      .contact-us p span {
+        font-size: .8rem; } }
 
 .contact-us-head {
   text-align: center; }
@@ -8042,7 +8045,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 h1 {
   width: 100%;
-  text-align: center; }
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.8rem; }
 
 p {
   text-align: justify; }
@@ -8087,7 +8092,7 @@ p {
     #maxBorrow .maxBorrowP span {
       color: #cf8b17; }
       #maxBorrow .maxBorrowP span a {
-        color: #ffffff; }
+        color: #e8a431; }
         #maxBorrow .maxBorrowP span a:hover {
           color: #cf8b17;
           text-decoration: none; }
@@ -8097,6 +8102,13 @@ p {
     width: 100%;
     text-align: center;
     color: #cf8b17; }
+
+.calculator-warning-box-head {
+  background-color: #2d0845;
+  font-size: 1.1rem;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center; }
 
 .MRresult {
   display: none; }
@@ -8113,7 +8125,7 @@ p {
     font-weight: 500;
     color: #ffffff; }
     .MRresultShow-p span a {
-      color: #ffffff; }
+      color: #e8a431; }
       .MRresultShow-p span a:hover {
         color: #cf8b17;
         text-decoration: none; }
@@ -8122,6 +8134,9 @@ p {
       text-align: center;
       font-size: 3rem;
       font-weight: 700; }
+
+.monthly-payment-info {
+  margin-top: 2rem; }
 
 .SDresult {
   display: none; }

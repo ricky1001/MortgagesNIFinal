@@ -1,14 +1,3 @@
-When this application was submitted your system was very glitchy as such we were kicked out a few times. Upon reading through the application I can see that some information was lost.
-
-1. Applicant has a student loan details of the monthly repayment can be seen on his payslip about £35 / month depending on overtime etc
-
-2. Pension contribution - approximately £40 / month depending on overtime.
-
-3. Application seems to have entered him at £70 / month for food and drink which is unrealistic again this must have been down to a glitch. 
-
-
-
-
 Has to be done !!!
 
 Buy vectored image for the home page so that it scales on bigger screens as it is currently repeating 
@@ -29,6 +18,8 @@ Make sure that the ssl certificate from mortgageadviserni is working
 
 
 Can be done at a later date
+
+Optimize all metatags
 
 Optimize images on the site for size etc
 

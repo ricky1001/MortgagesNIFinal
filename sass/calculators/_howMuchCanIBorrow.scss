@@ -1,6 +1,8 @@
 h1 {
   width: 100%;
-  text-align: center;
+  margin-bottom: 2rem;
+  margin-top:2rem;
+  font-size: 1.8rem;
 }
 
 p{
@@ -59,7 +61,7 @@ p{
       color: $tertiary-orange-dark;
 
       & a{
-        color: $color-white;
+        color: $tertiary-orange;
 
         &:hover{
             color: $tertiary-orange-dark;
@@ -77,5 +79,12 @@ p{
     color: $tertiary-orange-dark;
 
   }
+}
 
+.calculator-warning-box-head{
+  background-color: $primary-purple-dark;
+  font-size: 1.1rem;
+  color: $color-white;
+  padding: 2rem;
+  text-align: center;
 }
