@@ -5,6 +5,8 @@ Buy vectored image for the home page so that it scales on bigger screens as it i
 
 Fix all header tags on all pages so that they flow from h1 - h2 etc
 
+Add legitimate figures to rate table
+
 
 
 **After the site goes live **
