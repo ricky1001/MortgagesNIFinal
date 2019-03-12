@@ -1,11 +1,12 @@
 .jumbo-home{
     position: relative;
     background-image: linear-gradient(
-        to right bottom,
+       to right bottom,
         rgba($primary-purple, 0.1),
         rgba($primary-purple, 0.1)),
-        url(../img/Family.jpg);
+        url(../img/happy-family-wide.jpg);
     height: 75vh;
+    background-position: 42% 0%;
 
     &-container{
         padding: 0px;

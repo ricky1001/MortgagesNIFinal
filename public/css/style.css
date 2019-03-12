@@ -6927,8 +6927,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .jumbo-home {
   position: relative;
-  background-image: linear-gradient(to right bottom, rgba(159, 49, 232, 0.1), rgba(159, 49, 232, 0.1)), url(../img/Family.jpg);
-  height: 75vh; }
+  background-image: linear-gradient(to right bottom, rgba(159, 49, 232, 0.1), rgba(159, 49, 232, 0.1)), url(../img/happy-family-wide.jpg);
+  height: 75vh;
+  background-position: 42% 0%; }
   .jumbo-home-container {
     padding: 0px; }
   .jumbo-home-content {
@@ -7092,6 +7093,7 @@ a.text-dark:hover, a.text-dark:focus {
       bottom: 2rem; }
 
 .best-buys {
+  display: none;
   width: 100%;
   position: relative;
   background-color: #2d0845;
