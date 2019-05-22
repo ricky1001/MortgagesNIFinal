@@ -1,35 +1,6 @@
 
 var data;
-/*
-$('#form-action').click(function(event) {
-    event.preventDefault();
 
-    $.ajax({
-        global: false,
-        type: 'POST',
-        url: "/send",
-        dataType: 'html',
-        data: {
-            firstName: $("#firstName").val(),
-            lastName: $("#lastName").val(),
-            email: $("#email").val(),
-            contactNumber: $("#email").val(),
-            message: $("#message").val()
-        },
-        
-        success: function (result) {
-            
-            console.log(data);
-            console.log(result);
-        },
-        error: function (request, status, error) {
-            serviceError();
-        }
-    });
-});
-
-
-*/
 
 var sent = document.querySelector(".message");
 

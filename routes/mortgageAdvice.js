@@ -2,9 +2,11 @@ var express = require("express");
 var router = express.Router();
 var mortgageAdvice = require("../models/mortgageAdvice");
 var passport = require("passport");
+var latestRates = require("../models/latestRates");
 
 //mortgage Advice
 // Index Route
+
 router.get("/mortgage-advice", function(req, res){
   var metatitle = "Mortgage Advice Blog";
   var metadescription = "Read the latest posts from our best mortgage brokers"
@@ -18,6 +20,9 @@ router.get("/mortgage-advice", function(req, res){
     }
   }) 
 });
+
+
+
 
 //New Route
 router.get("/mortgage-advice-new", isLoggedIn, function(req, res){

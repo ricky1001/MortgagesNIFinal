@@ -12,19 +12,16 @@ var LocalStrategy = require("passport-local");
 var passportLocalMongoose = require("passport-local-mongoose");
 var nodemailer = require("nodemailer");
 
+/*
+//add latest Rates
+var seedDB = require("./seed");
 
+seedDB();
+*/
 
-
-
-//Rates
-rates = [
-    {lender: "Santander", rate: 1.9},
-    {lender: "Santander", rate: 1.9},
-    {lender: "Santander", rate: 1.9},
-    {lender: "Santander", rate: 1.9},
-];
 
 //Model Schemas
+var latestRate =            require("./models/latestRates");
 var Rate =                  require("./models/rates");
 var buytolet =              require("./models/buytolet");
 var enquiry =               require("./models/enquiry");
@@ -36,6 +33,9 @@ var remortgage =            require("./models/remortgage");
 var selfemployed =          require("./models/selfEmployed");
 var governmentschemes =      require("./models/governmentschemes")
 var User =                  require("./models/user")
+
+
+
 
 //requiring routes
 
@@ -51,6 +51,9 @@ var remortgageRoutes         = require("./routes/remortgage");
 var selfEmployedRoutes       = require("./routes/selfEmployed");
 var userRoutes               = require("./routes/user");
 var calculatorRoutes         = require("./routes/calculators");
+var latestRatesRoutes        = require("./routes/latestRates");
+var bestBuys                 = require("./routes/best-Buys");
+
 
 
 
@@ -132,6 +135,23 @@ let HelperOptions = {
 
 });
 
+//retrieve latest Rates
+
+app.get("/latestRates", function(req, res){
+  latestRates.find({}, function(err, latestRates){
+    if(err){
+      console.log(err)
+    }else{
+      res.render("./bestBuys/best-buys", {
+                                          metatitle: "Find the Latest Mortgage Best Buys | Mortgages Northern Ireland",
+                                          metadescription: "Mortgages Northern Ireland aim to provide our clients with the best mortgage products every time search the market today for the latest offers from across the market",
+                                          latestRates: latestRates
+                                        }
+      )
+    }
+  })
+})
+
 
 
 app.use(indexRoutes);
@@ -146,6 +166,9 @@ app.use(remortgageRoutes);
 app.use(selfEmployedRoutes);
 app.use(userRoutes);
 app.use(calculatorRoutes);
+app.use(latestRatesRoutes);
+app.use(bestBuys);
+
 
 
 

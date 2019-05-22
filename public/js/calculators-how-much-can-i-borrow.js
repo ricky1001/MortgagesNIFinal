@@ -53,5 +53,4 @@ sp.innerHTML = "£" + maxLoan.toLocaleString('en');
 });
 
 
-//Monthly Repayments 
-
+//Monthly Repayments
