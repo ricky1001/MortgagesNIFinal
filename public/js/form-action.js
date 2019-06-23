@@ -5,6 +5,7 @@ var data;
 var sent = document.querySelector(".message");
 
 $('#form-action').click(function(event) {
+    dataLayer.push({'event' : 'formSubmitted', 'formName' : 'Contact Us'});
     event.preventDefault();
 
         var data = {
