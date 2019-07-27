@@ -14,7 +14,7 @@ router.get("/re-mortgage-advice", function(req, res){
                                                 {
                                                  rmPost: rmPost,
                                                  metatitle: "Fee Free re-mortgage Advice in Northern Ireland",
-                                                 metadescription: "Our mortgage brokers have access to all the latest re-mortgage Northern Ireland deals. Mortgage adviser NI can help with any remortgage enquiries that you may have."
+                                                 metadescription: "Our mortgage brokers have access to all the latest re-mortgage Northern Ireland deals. Mortgages Northern Ireland can help with any remortgage enquiries that you may have."
                                                  });
     }
   })

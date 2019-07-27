@@ -14,7 +14,7 @@ router.get("/self-employed-mortgages", function(req, res){
                                                 {
                                                  sePost: sePost,
                                                  metatitle: "Self-employed Mortgage Advice in Northern Ireland",
-                                                 metadescription: "Mortgage Adviser NI offer free self-employed Mortgage Advice to all of our Northern Ireland clients. Contact us today for the best self-employed mortgage advice."
+                                                 metadescription: "Mortgages Northern Ireland NI offer free self-employed Mortgage Advice to all of our Northern Ireland clients. Contact us today for the best self-employed mortgage advice."
                                                  });
     }
   })

@@ -64,8 +64,8 @@ router.get("/self-build-mortgages", function(req, res){
 
 //PRIVACY POLICY
 router.get("/privacy-policy", function(req, res){
-  var metatitle = "Privacy policy - Mortgage Adviser NI"
-  var metadescription = "Read our privacy policy at mortgage adviser ni"
+  var metatitle = "Privacy policy - Mortgages Northern Ireland"
+  var metadescription = "Read our privacy policy at mortgages ni"
   res.render("privacy-policy",
              {metatitle:metatitle, metadescription: metadescription}
             )
@@ -73,7 +73,7 @@ router.get("/privacy-policy", function(req, res){
 
 // Cookies
 router.get("/cookies", function(req, res){
-  var metatitle = "How we use cookies - Mortgage Adviser NI"
+  var metatitle = "How we use cookies - Mortgages Northern Ireland"
   var metadescription = "A brief look at how mortgage adviser ni uses cookies to enhance your experience."
   res.render("cookies",
              {metatitle:metatitle, metadescription: metadescription}
@@ -82,7 +82,7 @@ router.get("/cookies", function(req, res){
 
 //our Service
 router.get("/our-service", function(req, res){
-  var metatitle = "Our Service - Mortgage Adviser NI"
+  var metatitle = "Our Service - Mortgages Northern Ireland"
   var metadescription = "Have a look at the services provided by Mortgage Adviser NI in Northern Ireland"
   res.render("our-service",
              {metatitle:metatitle, metadescription: metadescription}
@@ -91,7 +91,7 @@ router.get("/our-service", function(req, res){
 
 //Why Get Advice
 router.get("/why-get-advice", function(req, res){
-  var metatitle = "Why get Advice - Mortgage Adviser NI"
+  var metatitle = "Why get Advice - Mortgages Northern Ireland"
   var metadescription = "Find out why you should get advice from Mortgage Adviser NI"
   res.render("why-get-advice",
              {metatitle:metatitle, metadescription: metadescription}
@@ -100,7 +100,7 @@ router.get("/why-get-advice", function(req, res){
 
 //faq
 router.get("/faq", function(req,res){
-  var metatitle = "FAQ - Mortgage Adviser NI"
+  var metatitle = "FAQ - Mortgages Northern Ireland"
   var metadescription = "Have a look at some of the FAQ's our mortgage advisers deal with on a reguar basis."
   res.render("faq",
              {metatitle:metatitle, metadescription: metadescription}

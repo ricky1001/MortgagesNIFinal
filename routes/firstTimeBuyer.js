@@ -13,7 +13,7 @@ router.get("/first-time-buyer-mortgages", function(req, res){
       res.render("./firstTimeBuyers/first-time-buyer-mortgages", 
                                                 {
                                                  ftbPost: ftbPost,
-                                                 metatitle: "First Time Buyer Mortgage Advice | Mortgage Adviser NI",
+                                                 metatitle: "First Time Buyer Mortgage Advice | Mortgages Northern Ireland",
                                                  metadescription: "Our free mortgage brokers are able to give all the first time buyer mortgage advice you will ever need. Call mortgage adviser NI today."
                                                  });
     }
