@@ -26,7 +26,7 @@ res.render("map", {
 
 router.get("/", function(req, res){
   var metatitle = "Mortgages Northern Ireland | Fee Free Mortgage Broker | Mortgage Advice | NI"
-  var metadescription = "Mortgage Adviser NI offers free mortgage advice on all mortgages in northern Ireland. Contact mortgage adviser NI for a free appointment."
+  var metadescription = "Mortgages Nothern Ireland offer free mortgage advice on all mortgages in northern Ireland. Contact mortgages Northern Ireland for a free appointment."
   mortgageAdvice.find({}, function(err, mAdvice){
     if(err){
       console.log(err)
@@ -56,7 +56,7 @@ router.get("/", function(req, res){
 //Self-Build Pages
 router.get("/self-build-mortgages", function(req, res){
   var metatitle = "Self Build Mortgages NI - Free Mortgage Advice Northern Ireland"
-  var metadescription = "Self build Mortgages NI ! Mortgage Adviser NI offers free mortgage advice to all self build mortgage applicants in northern Ireland. Contact a mortgage broker today."
+  var metadescription = "Self build Mortgages NI ! Mortgages Nrthern Ireland offers free mortgage advice to all self build mortgage applicants in northern Ireland. Contact a mortgage broker today."
   res.render("./self-build/self-build-mortgages",
              {metatitle:metatitle, metadescription: metadescription}
             )
