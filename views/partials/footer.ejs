@@ -189,5 +189,58 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz4WUpKJF-ZnlkR3kyFuiBn1vd2-vcrZQ&callback=initMap"async defer></script>
 
+
+<!--Script Tags for Reviews.co.uk-->
+
+<!--Home Page Carousel widget-->
+<script src="https://widget.reviews.co.uk/rich-snippet-reviews-widgets/dist.js" type="text/javascript"></script>
+<script>
+        richSnippetReviewsWidgets("carousel-widget", {
+            store: "mortgagesnorthernireland-com",
+            primaryClr: "#f47e27",
+            neutralClr: "#cccccc",
+            reviewTextClr: "#333333",
+            widgetName: "carousel",
+            layout: "fullWidth",
+            numReviews: 40,
+            contentMode: "company",
+            hideDates: false
+        });
+</script>
+<!--Home Page Carousel widget-->
+
+<!--Floating Page widget-->
+<link rel="stylesheet" type="text/css" href="https://widget.reviews.co.uk/floating-widget/css/dist.css">
+<script src="https://widget.reviews.co.uk/rich-snippet-reviews-widgets/dist.js" type="text/javascript"></script>
+
+<script>
+    window.onload = function() {
+        richSnippetReviewsWidgets({
+            store: "mortgagesnorthernireland-com",
+            primaryClr: "#f47e27",
+            widgetName: "floating-widget",
+            numReviews: 40,
+            floatPosition: "left",
+            contentMode: "company",
+            hideDates: false
+        });
+    };
+</script>
+<!--Floating Page widget-->
+
+<!--Side Bar Widget-->
+<script src="https://widget.reviews.co.uk/rich-snippet-reviews-widgets/dist.js"></script>
+    
+    <script>
+    richSnippetReviewsWidgets('vertical-widget-720', {
+        store: 'mortgagesnorthernireland-com',
+        widgetName: 'vertical',
+        primaryClr: '#f47e27',
+        layout:'fullWidth',
+        height: 500,
+        numReviews: 10
+    });
+    </script>
+<!--Side Bar Widget-->
 </body>
 </html
