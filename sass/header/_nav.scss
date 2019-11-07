@@ -63,6 +63,11 @@
                 display: inline-block;
                 padding: 0rem .7rem;
                 color: $tertiary-yellow-dark;
+
+                & a{
+                    color: $tertiary-yellow-dark;
+
+                }
             }
         }
     }

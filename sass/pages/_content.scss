@@ -123,6 +123,14 @@ margin-top: 1rem;
                 margin-top: .5rem;
             }
         }
+
+        & p{
+            text-align: center;
+
+            & a{
+                color: $tertiary-orange-logo;
+            }
+        }
     }
 
 
