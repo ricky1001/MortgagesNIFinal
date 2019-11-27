@@ -12,9 +12,10 @@ $('#form-action').click(function(event) {
         firstName: $("#firstName").val(),
         lastName: $("#lastName").val(),
         email: $("#email").val(),
-        contactNumber: $("#contactNumber").val(),
+        contactNumber: $("#number").val(),
         message: $("#message").val()
        }
+       console.log(data);
 
        $('#main-form')[0].reset();
        sent.className = "message-sent";
