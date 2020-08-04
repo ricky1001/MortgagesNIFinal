@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss public/css/style.css -w",
-    "start": "node app.js",
-    "live": "nodemon server.js"
+    "start": "node app.js"
+    
   },
   "author": "Richard Aston",
   "license": "ISC",
@@ -28,3 +28,6 @@
     "node-sass": "^4.13.0"
   }
 }
+
+
+
