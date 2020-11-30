@@ -8418,6 +8418,11 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 1.8rem; }
   .guide-head .in-this-guide {
     padding: 2rem; }
+    @media (max-width: 768px) {
+      .guide-head .in-this-guide {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem; } }
     .guide-head .in-this-guide .key-point-head {
       font-weight: 500; }
 
@@ -8425,6 +8430,11 @@ a.text-dark:hover, a.text-dark:focus {
   padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 3rem; }
+  @media (max-width: 768px) {
+    .key-point {
+      padding-left: .8rem;
+      padding-right: .8rem;
+      padding-top: .8rem; } }
   .key-point h3 {
     color: #4b0082; }
   .key-point p {
