@@ -31,8 +31,9 @@ var firstTimeBuyer =        require("./models/firstTimeBuyer");
 var mortgageType =          require("./models/mortgageType");
 var remortgage =            require("./models/remortgage");
 var selfemployed =          require("./models/selfEmployed");
-var governmentschemes =      require("./models/governmentschemes")
-var User =                  require("./models/user")
+var governmentschemes =      require("./models/governmentschemes");
+var User =                  require("./models/user");
+
 
 
 
@@ -53,6 +54,8 @@ var userRoutes               = require("./routes/user");
 var calculatorRoutes         = require("./routes/calculators");
 var latestRatesRoutes        = require("./routes/latestRates");
 var bestBuys                 = require("./routes/best-Buys");
+var adverts                  = require("./routes/adverts");
+var test                  = require("./routes/test");
 
 
 
@@ -168,7 +171,8 @@ app.use(userRoutes);
 app.use(calculatorRoutes);
 app.use(latestRatesRoutes);
 app.use(bestBuys);
-
+app.use(adverts);
+app.use(test);
 
 
 

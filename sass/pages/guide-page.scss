@@ -1,0 +1,34 @@
+.guide{
+
+    &-head{
+        background-color: $primary-purple-light;
+        color:$vibrant-purple;
+        font-size: 1.8rem;
+
+        & .in-this-guide{
+            padding: 2rem;
+           
+            & .key-point-head{
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.key-point{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+
+    & h3{
+        color: $vibrant-purple;
+    }
+
+    & p{
+        font-size: 1.1rem;
+    }
+}
+
+.alt-color{
+   background-color:  $background-grey
+}

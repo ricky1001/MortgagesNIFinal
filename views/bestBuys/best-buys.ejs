@@ -1,4 +1,5 @@
-<% include ../partials/heads %>
+<% include ../partials/head-tags %>
+<% include ../partials/main-menu %>
 
 
 <h1>Mortgage Rates</h1>
@@ -39,9 +40,9 @@ function loadUsers(){
             document.getElementById("rates").innerHTML = output;
         
         }
+        xhr.send();
     }
-    xhr.send();
-}
+    
 </script>
 
 

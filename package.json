@@ -7,7 +7,6 @@
     "compile:sass": "node-sass sass/main.scss public/css/style.css -w",
     "start": "node app.js",
     "live": "nodemon server.js"
-    
   },
   "author": "Richard Aston",
   "license": "ISC",
@@ -21,6 +20,7 @@
     "method-override": "^3.0.0",
     "mongoose": "^5.4.10",
     "nodemailer": "^5.1.1",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.1"
@@ -29,6 +29,3 @@
     "node-sass": "^4.13.0"
   }
 }
-
-
-
