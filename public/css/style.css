@@ -8417,7 +8417,8 @@ a.text-dark:hover, a.text-dark:focus {
   color: #4b0082;
   font-size: 1.8rem; }
   .guide-head .in-this-guide {
-    padding: 2rem; }
+    padding: 2rem;
+    color: white; }
     @media (max-width: 768px) {
       .guide-head .in-this-guide {
         padding-left: 0rem;
