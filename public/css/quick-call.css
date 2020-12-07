@@ -16,6 +16,21 @@
 
 }
 
+/*Media queries for the floating icon*/
+@media only screen and (max-width: 448px) {
+    .call-us-icon-box{
+      right: 2rem;;
+    }
+  }
+
+@media only screen and (max-width: 353px) {
+    .call-us-icon-box{
+      right: .5rem;
+    }
+  }  
+
+
+/*Media Queries for the popup box*/
 @media only screen and (max-width: 448px) {
     #quick-call{
       right: 2rem;;
