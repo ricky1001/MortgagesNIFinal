@@ -14,7 +14,8 @@ router.get("/self-employed-mortgages", function(req, res){
                                                 {
                                                  sePost: sePost,
                                                  metatitle: "Self-employed Mortgage Advice in Northern Ireland",
-                                                 metadescription: "Mortgages Northern Ireland NI offer free self-employed Mortgage Advice to all of our Northern Ireland clients. Contact us today for the best self-employed mortgage advice."
+                                                 metadescription: "Mortgages Northern Ireland NI offer free self-employed Mortgage Advice to all of our Northern Ireland clients. Contact us today for the best self-employed mortgage advice.",
+                                                 quickCallHelpers: req.quickCallHelpers
                                                  });
     }
   })
@@ -26,7 +27,8 @@ router.get("/self-employed-mortgages-new", isLoggedIn, function(req, res){
   var metadescription = "Add a new Self Employed Mortgage Post"
   res.render("./self-employed/self-employed-mortgages-new",
             {metatitle: metatitle,
-             metadescription: metadescription
+             metadescription: metadescription,
+             quickCallHelpers: req.quickCallHelpers
     
              }
             );
@@ -59,7 +61,8 @@ router.get("/self-employed-mortgages/:id", function(req, res){
     }else{
       res.render("./self-employed/self-employed-mortgages-show", {foundsePost: foundsePost,                                                     
                                                       metatitle: foundsePost.metatitle,
-                                                      metadescription: foundsePost.metadescription
+                                                      metadescription: foundsePost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   })
@@ -73,7 +76,8 @@ router.get("/self-employed-mortgages/:id/edit", isLoggedIn, function(req, res){
     } else{
       res.render("./self-employed/self-employed-mortgages-edit", {foundsePost: foundsePost,
                                                       metatitle: foundsePost.metatitle,
-                                                      metadescription: foundsePost.metadescription
+                                                      metadescription: foundsePost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   });

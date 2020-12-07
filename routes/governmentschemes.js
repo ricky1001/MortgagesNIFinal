@@ -15,7 +15,8 @@ router.get("/government-schemes", function(req, res){
                                                 {
                                                  gsPost: gsPost,
                                                  metatitle: "Government Mortgage Schemes in Northern Ireland | Free Mortgage Advice",
-                                                 metadescription: "Government Mortgages schemes in Northern Ireland. Mortgage Adviser NI have a wealth of knowledge regarding all government mortgage schemes in Northern Ireland."
+                                                 metadescription: "Government Mortgages schemes in Northern Ireland. Mortgage Adviser NI have a wealth of knowledge regarding all government mortgage schemes in Northern Ireland.",
+                                                 quickCallHelpers: req.quickCallHelpers
                                                  });
     }
   })
@@ -27,7 +28,8 @@ router.get("/government-schemes-new", isLoggedIn, function(req, res){
   var metadescription = "Add a new Government Scheme Post"
   res.render("./governmentschemes/government-schemes-new",
             {metatitle: metatitle,
-             metadescription: metadescription
+             metadescription: metadescription,
+             quickCallHelpers: req.quickCallHelpers
     
              }
             );
@@ -61,7 +63,8 @@ router.get("/government-schemes/:id", function(req, res){
       res.render("./governmentschemes/government-schemes-show", {foundgsPost: foundgsPost,
                                                         
                                                       metatitle: foundgsPost.metatitle,
-                                                      metadescription: foundgsPost.metadescription
+                                                      metadescription: foundgsPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   })
@@ -75,7 +78,8 @@ router.get("/government-schemes/:id/edit", isLoggedIn, function(req, res){
     } else{
       res.render("./governmentschemes/government-schemes-edit", {foundgsPost: foundgsPost,
                                                       metatitle: "edit government scheme post",
-                                                      metadescription: "edit government scheme post"
+                                                      metadescription: "edit government scheme post",
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   });

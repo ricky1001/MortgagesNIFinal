@@ -10,7 +10,8 @@ router.get("/register", function(req, res){
   metadescription = "Register to be a site admin"
   res.render("register", {
                           metatitle: metatitle,
-                          metadescription: metadescription
+                          metadescription: metadescription,
+                          quickCallHelpers: req.quickCallHelpers
                           });
 })
 
@@ -37,7 +38,8 @@ router.get("/login", function(req, res){
   metadescription = "Administration Login Form";
   res.render("login", {
                       metatitle: metatitle,
-                      metadescription: metadescription
+                      metadescription: metadescription,
+                      quickCallHelpers: req.quickCallHelpers
                       });
 })
 

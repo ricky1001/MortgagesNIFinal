@@ -17,7 +17,8 @@ router.get("/enquiry-success", function(req, res){
 router.get("/map", function(req, res){
 res.render("map", {
                    metatitle: "Find us",
-                   metadescription: "find us"
+                   metadescription: "find us",
+                   quickCallHelpers: req.quickCallHelpers
 });
 });
 
@@ -43,7 +44,8 @@ router.get("/", function(req, res){
                 metatitle, metatitle,
                 metadescription: metadescription,
                 rate: filteredRate,
-                mAdvice: mAdvice
+                mAdvice: mAdvice,
+                quickCallHelpers: req.quickCallHelpers
               })
             })
         }
@@ -58,7 +60,8 @@ router.get("/self-build-mortgages", function(req, res){
   var metatitle = "Self Build Mortgages NI - Free Mortgage Advice Northern Ireland"
   var metadescription = "Self build Mortgages NI ! Mortgages Nrthern Ireland offers free mortgage advice to all self build mortgage applicants in northern Ireland. Contact a mortgage broker today."
   res.render("./self-build/self-build-mortgages",
-             {metatitle:metatitle, metadescription: metadescription}
+             {metatitle:metatitle, metadescription: metadescription,
+              quickCallHelpers: req.quickCallHelpers}
             )
 })
 
@@ -67,7 +70,8 @@ router.get("/privacy-policy", function(req, res){
   var metatitle = "Privacy policy - Mortgages Northern Ireland"
   var metadescription = "Read our privacy policy at mortgages ni"
   res.render("privacy-policy",
-             {metatitle:metatitle, metadescription: metadescription}
+             {metatitle:metatitle, metadescription: metadescription,
+              quickCallHelpers: req.quickCallHelpers}
             )
 })
 
@@ -76,7 +80,8 @@ router.get("/cookies", function(req, res){
   var metatitle = "How we use cookies - Mortgages Northern Ireland"
   var metadescription = "A brief look at how mortgage adviser ni uses cookies to enhance your experience."
   res.render("cookies",
-             {metatitle:metatitle, metadescription: metadescription}
+             {metatitle:metatitle, metadescription: metadescription,
+              quickCallHelpers: req.quickCallHelpers}
             );
 });
 
@@ -85,7 +90,8 @@ router.get("/our-service", function(req, res){
   var metatitle = "Our Service - Mortgages Northern Ireland"
   var metadescription = "Have a look at the services provided by Mortgage Adviser NI in Northern Ireland"
   res.render("our-service",
-             {metatitle:metatitle, metadescription: metadescription}
+             {metatitle:metatitle, metadescription: metadescription,
+              quickCallHelpers: req.quickCallHelpers}
             );
 });
 
@@ -94,7 +100,8 @@ router.get("/why-get-advice", function(req, res){
   var metatitle = "Why get Advice - Mortgages Northern Ireland"
   var metadescription = "Find out why you should get advice from Mortgage Adviser NI"
   res.render("why-get-advice",
-             {metatitle:metatitle, metadescription: metadescription}
+             {metatitle:metatitle, metadescription: metadescription,
+              quickCallHelpers: req.quickCallHelpers}
             )
 })
 
@@ -103,7 +110,8 @@ router.get("/faq", function(req,res){
   var metatitle = "FAQ - Mortgages Northern Ireland"
   var metadescription = "Have a look at some of the FAQ's our mortgage advisers deal with on a reguar basis."
   res.render("faq",
-             {metatitle:metatitle, metadescription: metadescription}
+             {metatitle:metatitle, metadescription: metadescription,
+              quickCallHelpers: req.quickCallHelpers}
             )
 })
 
@@ -113,7 +121,8 @@ router.get("/contact-us", function(req,res){
   var metadescription = "Submit an enquiry to Mortgages Northern Ireland"
   res.render("contact-us",
              {metatitle:metatitle, 
-              metadescription: metadescription}
+              metadescription: metadescription,
+              quickCallHelpers: req.quickCallHelpers}
             )
 })
 
@@ -122,7 +131,8 @@ router.get("/heads", function(req, res){
   var metatitle = "Temporary Header"
   var metadescription = "New attempt at header"
   res.render("./partials/heads",
-             {metatitle:metatitle, metadescription: metadescription}
+             {metatitle:metatitle, metadescription: metadescription,
+              }
             );
 });
 
@@ -143,7 +153,8 @@ router.get("/test", function(req, res){
       res.render("test",
                 {metatitle:metatitle, 
                  metadescription: metadescription,
-                 rate:filteredRate})
+                 rate:filteredRate,
+                 quickCallHelpers: req.quickCallHelpers})
                               })
     }
   })

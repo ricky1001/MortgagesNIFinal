@@ -264,5 +264,22 @@
 
 <script src="js/side-bar-menu/side-bar-menu.js"></script>
 
+
+<!--Partial and Javascript file for the quick call component-->
+<% var hoursPastNine = JSON.stringify(quickCallHelpers.hoursPastNine) %>
+
+<p id="hoursPastNine" style="display:none"><%= hoursPastNine %></p>
+
+<script type="text/javascript">
+  var hoursPastNine = document.getElementById("hoursPastNine").innerText;
+ 
+</script>
+<script src="js/side-bar-menu/side-bar-menu.js"></script>
+
+<% include quick-call %>
+<script src="js/quickCall/quickCall.js"></script>
+
+<script src="js/bookingCalendar/bookCallBackIcon.js"></script>
+
 </body>
 </html

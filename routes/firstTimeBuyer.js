@@ -14,7 +14,8 @@ router.get("/first-time-buyer-mortgages", function(req, res){
                                                 {
                                                  ftbPost: ftbPost,
                                                  metatitle: "First Time Buyer Mortgage Advice | Mortgages Northern Ireland",
-                                                 metadescription: "Our free mortgage brokers are able to give all the first time buyer mortgage advice you will ever need. Call mortgage adviser NI today."
+                                                 metadescription: "Our free mortgage brokers are able to give all the first time buyer mortgage advice you will ever need. Call mortgage adviser NI today.",
+                                                 quickCallHelpers: req.quickCallHelpers
                                                  });
     }
   })
@@ -26,8 +27,8 @@ router.get("/ftb-mortgages-new", isLoggedIn, function(req, res){
   var metadescription = "Add a new First Time Buyer Post"
   res.render("./firstTimeBuyers/ftb-mortgages-new",
             {metatitle: metatitle,
-             metadescription: metadescription
-    
+             metadescription: metadescription,
+             quickCallHelpers: req.quickCallHelpers 
              }
             );
 });
@@ -62,7 +63,8 @@ router.get("/first-time-buyer-mortgages/:id", function(req, res){
       res.render("./firstTimeBuyers/ftb-mortgages-show", {foundftbPost: foundftbPost,
                                                           ftbAllPages: ftbAllPages,
                                                       metatitle: foundftbPost.metatitle,
-                                                      metadescription: foundftbPost.metadescription
+                                                      metadescription: foundftbPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   })
@@ -76,7 +78,8 @@ router.get("/first-time-buyer-mortgages/:id/edit", isLoggedIn, function(req, res
     } else{
       res.render("./firstTimeBuyers/ftb-mortgages-edit", {foundFTBPost: foundFTBPost,
                                                       metatitle: foundFTBPost.metatitle,
-                                                      metadescription: foundFTBPost.metadescription
+                                                      metadescription: foundFTBPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   });

@@ -12,6 +12,10 @@ var LocalStrategy = require("passport-local");
 var passportLocalMongoose = require("passport-local-mongoose");
 var nodemailer = require("nodemailer");
 
+//Calling Util folders to supply quick call logic
+var callBackStrings = require("./util/quickCallBack/bookCallBack")
+var adjustedTimes = require("./util/quickCallBack/adjustedTimes")
+
 /*
 //add latest Rates
 var seedDB = require("./seed");
@@ -21,22 +25,7 @@ seedDB();
 
 
 //Model Schemas
-var latestRate =            require("./models/latestRates");
-var Rate =                  require("./models/rates");
-var buytolet =              require("./models/buytolet");
-var enquiry =               require("./models/enquiry");
-var mortgageAdvice =        require("./models/mortgageAdvice");
-var mortgageNews =          require("./models/mortgageNews");
-var firstTimeBuyer =        require("./models/firstTimeBuyer");
-var mortgageType =          require("./models/mortgageType");
-var remortgage =            require("./models/remortgage");
-var selfemployed =          require("./models/selfEmployed");
-var governmentschemes =      require("./models/governmentschemes");
 var User =                  require("./models/user");
-
-
-
-
 
 //requiring routes
 
@@ -58,7 +47,25 @@ var adverts                  = require("./routes/adverts");
 var test                  = require("./routes/test");
 
 
+//Trying to add Quick Call Back Logic to all routes
+var requestTime = function(req, res, next){
 
+  req.callBackString = callBackStrings.callBackStrings();
+  req.adjustedTimes = adjustedTimes.adjustedTimes;
+  req.times = adjustedTimes.times;
+  req.hoursPastNine = adjustedTimes.hoursPastNine;
+
+  req.quickCallHelpers = {
+    dayStrings: req.callBackString,
+    adjustedTimes: req.adjustedTimes,
+    times: req.times,
+    hoursPastNine: req.hoursPastNine
+  }
+  
+  next();
+}
+
+app.use(requestTime)
 
 //App Config
 app.use(require("express-session")({

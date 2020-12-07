@@ -16,7 +16,8 @@ router.get("/buy-to-let-mortgages", function(req, res){
                                                  rates: rates,
                                                  btlPost: btlPost,
                                                  metatitle: "Buy to Let Mortgages | Free Buy to Let Mortgage Advice",
-                                                 metadescription: "Mortgage Adviser NI has access to all the best buy to let mortgage NI deals. Give us a call about any Buy to Let Mortgage Enquiry you may in Northern Ireland ."
+                                                 metadescription: "Mortgage Adviser NI has access to all the best buy to let mortgage NI deals. Give us a call about any Buy to Let Mortgage Enquiry you may in Northern Ireland .",
+                                                 quickCallHelpers: req.quickCallHelpers
                                                  });
     }
   })
@@ -28,8 +29,8 @@ router.get("/buy-to-let-mortgages-new", isLoggedIn, function(req, res){
   var metadescription = "Add a new Buy to Let Mortgage Post"
   res.render("./buytolet/buy-to-let-mortgages-new",
             {metatitle: metatitle,
-             metadescription: metadescription
-    
+             metadescription: metadescription,
+             quickCallHelpers: req.quickCallHelpers
              }
             );
 });
@@ -61,7 +62,8 @@ router.get("/buy-to-let-mortgages/:id", function(req, res){
     }else{
       res.render("./buytolet/buy-to-let-mortgages-show", {foundbtlPost: foundbtlPost,                                                     
                                                       metatitle: foundbtlPost.metatitle,
-                                                      metadescription: foundbtlPost.metadescription
+                                                      metadescription: foundbtlPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   })
@@ -75,7 +77,8 @@ router.get("/buy-to-let-mortgages/:id/edit", isLoggedIn, function(req, res){
     } else{
       res.render("./buytolet/buy-to-let-mortgages-edit", {foundbtlPost: foundbtlPost,
                                                       metatitle: foundbtlPost.metatitle,
-                                                      metadescription: foundbtlPost.metadescription
+                                                      metadescription: foundbtlPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   });

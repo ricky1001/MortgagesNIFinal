@@ -8151,6 +8151,38 @@ a.text-dark:hover, a.text-dark:focus {
 .newLoadRates {
   display: none; }
 
+.guide-head {
+  background-color: rgba(245, 231, 231, 0.397);
+  font-size: 1.8rem; }
+  .guide-head .in-this-guide {
+    padding: 2rem;
+    color: #4b0082; }
+    @media (max-width: 768px) {
+      .guide-head .in-this-guide {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem; } }
+    @media (max-width: 768px) {
+      .guide-head .in-this-guide {
+        font-size: 1.4rem; } }
+    .guide-head .in-this-guide .key-point-head {
+      font-weight: 500; }
+
+.key-point {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem; }
+  @media (max-width: 768px) {
+    .key-point {
+      padding-left: .8rem;
+      padding-right: .8rem;
+      padding-top: .8rem; } }
+  .key-point p {
+    font-size: 1.1rem; }
+
+.alt-color {
+  background-color: rgba(245, 231, 231, 0.397); }
+
 .aip-menu {
   background-color: #4d1a72; }
   .aip-menu .logo-box {
@@ -8411,38 +8443,6 @@ a.text-dark:hover, a.text-dark:focus {
     padding-left: 0px; }
     .sliding-side-bar-open ul li {
       text-align: center; }
-
-.guide-head {
-  background-color: #ca8df2;
-  color: #4b0082;
-  font-size: 1.8rem; }
-  .guide-head .in-this-guide {
-    padding: 2rem;
-    color: white; }
-    @media (max-width: 768px) {
-      .guide-head .in-this-guide {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        padding-top: 0rem; } }
-    .guide-head .in-this-guide .key-point-head {
-      font-weight: 500; }
-
-.key-point {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 3rem; }
-  @media (max-width: 768px) {
-    .key-point {
-      padding-left: .8rem;
-      padding-right: .8rem;
-      padding-top: .8rem; } }
-  .key-point h3 {
-    color: #4b0082; }
-  .key-point p {
-    font-size: 1.1rem; }
-
-.alt-color {
-  background-color: rgba(245, 231, 231, 0.397); }
 
 .indexPageBox {
   box-shadow: 0 0 5px 0px rgba(153, 153, 153, 0.6);

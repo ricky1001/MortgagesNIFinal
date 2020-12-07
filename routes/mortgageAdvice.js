@@ -16,7 +16,8 @@ router.get("/mortgage-advice", function(req, res){
     } else{
       res.render("./mortgageAdvice/mortgage-advice", {mAdvice: mAdvice,
                                                       metatitle: metatitle,
-                                                      metadescription: metadescription});
+                                                      metadescription: metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers});
     }
   }) 
 });
@@ -30,7 +31,8 @@ router.get("/mortgage-advice-new", isLoggedIn, function(req, res){
   var metadescription = "Create a new Mortgage Advice Post";
   res.render("./mortgageAdvice/mortgage-advice-new",
             {metatitle: metatitle,
-             metadescription: metadescription}
+             metadescription: metadescription,
+             quickCallHelpers: req.quickCallHelpers}
             );
 });
 
@@ -64,7 +66,8 @@ router.get("/mortgage-advice/:id", function(req, res){
       res.render("./mortgageAdvice/mortgage-advice-show", 
                  {post: foundPost, 
                   metatitle: foundPost.metatitle,
-                  metadescription: foundPost.metadescription});
+                  metadescription: foundPost.metadescription,
+                  quickCallHelpers: req.quickCallHelpers});
     }
   })
 });
@@ -77,7 +80,8 @@ router.get("/mortgage-advice/:id/edit", isLoggedIn, function(req, res){
     } else{
       res.render("./mortgageAdvice/mortgage-advice-edit", {maPost: foundPost,
                                                           metatitle: foundPost.metatitle, 
-                                                          metadescription: foundPost.metadescription});
+                                                          metadescription: foundPost.metadescription,
+                                                          quickCallHelpers: req.quickCallHelpers});
     }
   });
 });

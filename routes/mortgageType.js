@@ -15,7 +15,8 @@ router.get("/mortgage-types", function(req, res){
                                                 {
                                                  mtPost: mtPost,
                                                  metatitle: "Mortgage Types",
-                                                 metadescription: "A look at the different types of mortgages that are available in Northern Ireland"
+                                                 metadescription: "A look at the different types of mortgages that are available in Northern Ireland",
+                                                 quickCallHelpers: req.quickCallHelpers
                                                  });
     }
   })
@@ -27,7 +28,8 @@ router.get("/mortgage-types-new", isLoggedIn, function(req, res){
   var metadescription = "Add a new Mortgage Type Post"
   res.render("./mortgageTypes/mortgage-types-new",
             {metatitle: metatitle,
-             metadescription: metadescription
+             metadescription: metadescription,
+             quickCallHelpers: req.quickCallHelpers
     
              }
             );
@@ -60,7 +62,8 @@ router.get("/mortgage-types/:id", function(req, res){
     }else{
       res.render("./mortgageTypes/mortgage-types-show", {foundmtPost: foundmtPost,
                                                       metatitle: foundmtPost.metatitle,
-                                                      metadescription: foundmtPost.metadescription
+                                                      metadescription: foundmtPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   })
@@ -74,7 +77,8 @@ router.get("/mortgage-types/:id/edit", isLoggedIn, function(req, res){
     } else{
       res.render("./mortgageTypes/mortgage-types-edit", {foundmtPost: foundmtPost,
                                                       metatitle: foundmtPost.metatitle,
-                                                      metadescription: foundmtPost.metadescription
+                                                      metadescription: foundmtPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   });

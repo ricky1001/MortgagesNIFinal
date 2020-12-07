@@ -12,8 +12,26 @@ const transporter = nodemailer.createTransport(sendgridTransport({
     }
 }));
 
-//Call Back enquiry Route
+//quick Call Enquiry Route
+router.post("/quick-call-enquiry", function(req, res){
+  return transporter.sendMail({
+    to: "info@mortgagesnorthernireland.com",
+    from: "info@mortgagesnorthernireland.com",
+    subject: "Quick Call Request",
+    html: `<div>
+              <p>
+                A client has requested a call back from Mortgages Northern Ireland on ${req.body.preferredDay} between ${req.body.preferredTime}.
+              </p>
+           </div>`
+  }).then(result => {
+    res.redirect("back");
+  })
+  .catch(err => {
+    console.log(err);
+  })
+})
 
+//Call Back enquiry Route
 router.post("/book-call-back", function(req, res){
   return transporter.sendMail({
       to: "info@mortgagesnorthernireland.com",

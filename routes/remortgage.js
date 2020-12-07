@@ -14,7 +14,8 @@ router.get("/re-mortgage-advice", function(req, res){
                                                 {
                                                  rmPost: rmPost,
                                                  metatitle: "Fee Free re-mortgage Advice in Northern Ireland",
-                                                 metadescription: "Our mortgage brokers have access to all the latest re-mortgage Northern Ireland deals. Mortgages Northern Ireland can help with any remortgage enquiries that you may have."
+                                                 metadescription: "Our mortgage brokers have access to all the latest re-mortgage Northern Ireland deals. Mortgages Northern Ireland can help with any remortgage enquiries that you may have.",
+                                                 quickCallHelpers: req.quickCallHelpers
                                                  });
     }
   })
@@ -26,7 +27,8 @@ router.get("/re-mortgage-new", isLoggedIn, function(req, res){
   var metadescription = "Add a new re-mortgage Post"
   res.render("./remortgage/re-mortgage-new",
             {metatitle: metatitle,
-             metadescription: metadescription
+             metadescription: metadescription,
+             quickCallHelpers: req.quickCallHelpers
     
              }
             );
@@ -60,7 +62,8 @@ router.get("/re-mortgage-advice/:id", function(req, res){
       res.render("./remortgage/re-mortgage-show", {foundrmPost: foundrmPost,
                                                         
                                                       metatitle: foundrmPost.metatitle,
-                                                      metadescription: foundrmPost.metadescription
+                                                      metadescription: foundrmPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   })
@@ -74,7 +77,8 @@ router.get("/re-mortgage-advice/:id/edit", isLoggedIn, function(req, res){
     } else{
       res.render("./remortgage/re-mortgage-edit", {foundrmPost: foundrmPost,
                                                       metatitle: "edit remortgage post",
-                                                      metadescription: "edit remortgage post"
+                                                      metadescription: "edit remortgage post",
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   });

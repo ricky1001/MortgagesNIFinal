@@ -10,6 +10,7 @@
 //variables
 @import "variables/colors";
 
+
 //components
 @import "components/jumbo";
 @import "components/lenders-section";
@@ -39,10 +40,11 @@
 @import "pages/content";
 @import "pages/contact-us";
 @import "pages/best-buys";
-@import "pages/adverts-aip";
-//@import "pages/redirect-white";
-@import "pages/redirect-dark";
+//Pages aip adverts
 @import "pages/guide-page";
+@import "pages/adverts-aip";
+@import "pages/redirect-dark";
+
 
 //advice
 @import "advice/advice";

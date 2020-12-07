@@ -1,18 +1,26 @@
 .guide{
 
     &-head{
-        background-color: $primary-purple-light;
-        color:$vibrant-purple;
+        background-color: $background-grey;
+
+
         font-size: 1.8rem;
 
         & .in-this-guide{
             padding: 2rem;
-            color: white;
+            
+          
+                color: $vibrant-purple;
+        
 
             @media (max-width: 768px) {
                 padding-left: 0rem;
                 padding-right: 0rem;
                 padding-top: 0rem;
+              }
+
+              @media (max-width: 768px) {
+                font-size: 1.4rem;
               }
            
             & .key-point-head{
@@ -34,7 +42,7 @@
       }
 
     & h3{
-        color: $vibrant-purple;
+        
     }
 
     & p{
@@ -43,5 +51,5 @@
 }
 
 .alt-color{
-   background-color:  $background-grey
+   background-color: $background-grey;
 }

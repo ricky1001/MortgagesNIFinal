@@ -14,7 +14,8 @@ router.get("/mortgage-news", function(req, res){
     } else{
       res.render("./mortgageNews/mortgage-news", {mNews: mNews,
                                                  metatitle: metatitle,
-                                                 metadescription: metadescription
+                                                 metadescription: metadescription,
+                                                 quickCallHelpers: req.quickCallHelpers
                                                  });
     }
   })
@@ -27,7 +28,8 @@ router.get("/mortgage-news-new", isLoggedIn, function(req, res){
   var metadescription = "Add a new Mortgage News Story"
   res.render("./mortgageNews/mortgage-news-new",
             {metatitle: metatitle,
-             metadescription: metadescription
+             metadescription: metadescription,
+             quickCallHelpers: req.quickCallHelpers
     
              }
             );
@@ -60,7 +62,8 @@ router.get("/mortgage-news/:id", function(req, res){
     }else{
       res.render("./mortgageNews/mortgage-news-show", {foundNewsPost: foundNewsPost,
                                                       metatitle: foundNewsPost.metatitle,
-                                                      metadescription: foundNewsPost.metadescription
+                                                      metadescription: foundNewsPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   })
@@ -74,7 +77,8 @@ router.get("/mortgage-news/:id/edit", isLoggedIn, function(req, res){
     } else{
       res.render("./mortgageNews/mortgage-news-edit", {newsPost: foundNewsPost,
                                                       metatitle: foundNewsPost.metatitle,
-                                                      metadescription: foundNewsPost.metadescription
+                                                      metadescription: foundNewsPost.metadescription,
+                                                      quickCallHelpers: req.quickCallHelpers
                                                       });
     }
   });

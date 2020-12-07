@@ -10,7 +10,8 @@ router.get("/best-buys", function(req, res){
             res.render("./bestBuys/best-buys", {
                                                 metatitle: "Find the Latest Mortgage Best Buys | Mortgages Northern Ireland",
                                                 metadescription: "Mortgages Northern Ireland aim to provide our clients with the best mortgage products every time search the market today for the latest offers from across the market",
-                                                latestRates: latestRates
+                                                latestRates: latestRates,
+                                                quickCallHelpers: req.quickCallHelpers
                                                 }
             );
         }

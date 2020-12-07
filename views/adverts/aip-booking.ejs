@@ -21,7 +21,6 @@
    </div>
  </div>
 
-
     <div class="booking pb-5">
      <div class="container">
       <div class="row">
@@ -60,7 +59,7 @@
 
             <button id="booking-button" type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#book-call-back-btn"            
             onclick="dataLayer.push({
-              'aipAdvert-call-back-init': 'Call back button clicked'
+              'AdvertClickToCallBack': 'call back initiated'
             })">
               Book a Call Back
             </button>
@@ -98,7 +97,7 @@
                 <button id="aipAdvertInit" type="button" class="btn btn-block btn-success" >
                   <a class="book-video-chat-link" href="https://app.acuityscheduling.com/schedule.php?owner=21271387"
                   onclick="dataLayer.push({
-                    'aipAdvert-video-chat-init': 'Video chat button clicked'
+                    'ClickToVideoChat': 'Video Chat Initialised'
                   })">Book a Video Chat</a>
                  </button>
     
@@ -202,7 +201,7 @@
     </div>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid alt-color">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -242,14 +241,14 @@
         <div class="form-group">
           <select id="pickCallBackDay" name="callBackDay" class="custom-select">
             <option value="">Pick a Day</option>
-            <option value="<%=bookCallBack.todayString%>">
-              <%=bookCallBack.todayString%>
+            <option value="<%=quickCallHelpers.dayStrings.todayString%>">
+              <%=quickCallHelpers.dayStrings.todayString%>
             </option>
-            <option value="<%=bookCallBack.tomorrowString%>">
-              <%=bookCallBack.tomorrowString%>
+            <option value="<%=quickCallHelpers.dayStrings.tomorrowString%>">
+              <%=quickCallHelpers.dayStrings.tomorrowString%>
             </option>
-            <option value="<%=bookCallBack.nextDayString%>">
-              <%=bookCallBack.nextDayString%>
+            <option value="<%=quickCallHelpers.dayStrings.nextDayString%>">
+              <%=quickCallHelpers.dayStrings.nextDayString%>
             </option>
           </select>
         </div>
@@ -257,7 +256,7 @@
         <div class="form-group" id="callListOption">
           <select id="pickATime" name="callBackTime" class="custom-select">
               <option value="">Pick a Time</option>
-                <% adjustedTimes.forEach(function(item){ %>
+                <% quickCallHelpers.adjustedTimes.forEach(function(item){ %>
                 <option class="pickATimeOption" value="<%=item%>"><%=item%></option>
               <%})%>
           </select>
@@ -284,7 +283,7 @@
         </div>
         <button id="aipBooked" type="submit" class="btn btn-primary"
         onclick="dataLayer.push({
-          'aipAdvert-call-back-booked': 'Call back booked'
+          'AdvertCallBackBooked': 'Call back booked'
         })">
         Book Call Back
       </button>
@@ -334,14 +333,10 @@
   </div>
 
 
-<% var hoursPastNine = JSON.stringify(hoursPastNine) %>
 
-<p id="hoursPastNine" style="display:none"><%= hoursPastNine %></p>
 
-<script type="text/javascript">
-  var hoursPastNine = document.getElementById("hoursPastNine").innerText;
- 
-</script>
-<script src="js/side-bar-menu/side-bar-menu.js"></script>
-<script src="js/bookingCalendar/bookCallBack.js"></script>
+
+
+
   <% include ../partials/footer %>
+  <script src="js/bookCallBackAdvert.js"></script>
