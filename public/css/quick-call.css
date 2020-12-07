@@ -133,7 +133,7 @@
     color: white;
 }
 
-@media only screen and (max-width: 353px) {
+@media only screen and (max-width: 420px) {
     .quick-call-contact-box span,
     .quick-call-contact-box input,
     .quick-call-contact-box input::placeholder{
