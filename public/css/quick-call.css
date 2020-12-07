@@ -114,6 +114,12 @@
 .quick-call-contact-box span{
     font-size: 1.3rem;
 }
+@media only screen and (max-width: 353px) {
+    .quick-call-contact-box span,
+    .quick-call-contact-box input{
+      font-size: 1rem;
+    }
+  } 
 
 .quick-call-contact-box input,
 .quick-call-contact-box input::placeholder{
