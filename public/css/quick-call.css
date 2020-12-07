@@ -114,13 +114,7 @@
 .quick-call-contact-box span{
     font-size: 1.3rem;
 }
-@media only screen and (max-width: 353px) {
-    .quick-call-contact-box span,
-    .quick-call-contact-box input,
-    .quick-call-contact-box input::placeholder{
-      font-size: 1rem;
-    }
-  } 
+
 
 .quick-call-contact-box input,
 .quick-call-contact-box input::placeholder{
@@ -129,6 +123,14 @@
     background-color: #4b0082;
     color: white;
 }
+
+@media only screen and (max-width: 353px) {
+    .quick-call-contact-box span,
+    .quick-call-contact-box input,
+    .quick-call-contact-box input::placeholder{
+      font-size: 1rem;
+    }
+  } 
 
 .quick-call-contact-box input:focus{
     outline: none
