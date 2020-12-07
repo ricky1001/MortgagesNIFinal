@@ -14,7 +14,7 @@
     animation-name: phonePulse;
     z-index: 600000000000000 !important;
 
-}
+} 
 
 /*Media queries for the floating icon*/
 @media only screen and (max-width: 448px) {
@@ -26,6 +26,7 @@
 @media only screen and (max-width: 353px) {
     .call-us-icon-box{
       right: .5rem;
+      bottom: 1rem;
     }
   }  
 
@@ -33,13 +34,13 @@
 /*Media Queries for the popup box*/
 @media only screen and (max-width: 448px) {
     #quick-call{
-      right: 2rem;;
+      right: 2rem;
     }
   }
 
 @media only screen and (max-width: 353px) {
     #quick-call{
-      right: .5rem;;
+      right: .2rem;
     }
   }  
 
@@ -56,6 +57,14 @@
     border-radius: 5%;
 
 }
+
+@media only screen and (max-width: 353px) {
+    .quick-call-down, .quick-call-up{
+      right: .2rem;
+      bottom: 4rem;
+    }
+  }  
+
 
 /* when the component is complete add this back in and set css above to height 0rem;*/
 .quick-call-up{
