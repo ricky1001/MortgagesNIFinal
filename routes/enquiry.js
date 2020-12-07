@@ -21,6 +21,8 @@ router.post("/quick-call-enquiry", function(req, res){
     html: `<div>
               <p>
                 A client has requested a call back from Mortgages Northern Ireland on ${req.body.preferredDay} between ${req.body.preferredTime}.
+
+                Please call this client back on ${req.body.clientContactNum}
               </p>
            </div>`
   }).then(result => {
