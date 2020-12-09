@@ -240,7 +240,6 @@
         <!--Select Menu Pre Populated with the following 3 days  -->
         <div class="form-group">
           <select id="pickCallBackDay" name="callBackDay" class="custom-select">
-            <option value="">Pick a Day</option>
             <option value="<%=quickCallHelpers.dayStrings.todayString%>">
               <%=quickCallHelpers.dayStrings.todayString%>
             </option>
@@ -255,7 +254,6 @@
 
         <div class="form-group" id="callListOption">
           <select id="pickATime" name="callBackTime" class="custom-select">
-              <option value="">Pick a Time</option>
                 <% quickCallHelpers.adjustedTimes.forEach(function(item){ %>
                 <option class="pickATimeOption" value="<%=item%>"><%=item%></option>
               <%})%>
@@ -339,4 +337,17 @@
 
 
   <% include ../partials/footer %>
-  <script src="js/bookCallBackAdvert.js"></script>
+
+
+
+  <!--Partial and Javascript file for the quick call component-->
+<% var quickCallHelpers = JSON.stringify(quickCallHelpers) %>
+
+<p id="quickCallHelpers" style="display:none"><%= quickCallHelpers %></p>
+
+<script type="text/javascript">
+  var quickCallHelpers = document.getElementById("quickCallHelpers").innerText;
+</script>
+
+
+  <script src="js/bookingCalendar/bookCallBackAdvert.js"></script>

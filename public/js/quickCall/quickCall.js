@@ -1,3 +1,5 @@
+//This files purpose is to control the quick call icon ie it opens the quick call box closes it changes the appearance side it does not control the values or the contents of the inputs that is controled by bookingCalendar/bookCallBackIcon
+
 //Icon Listeners
 const quickCallIcon = document.querySelector(".call-us-icon-box");
 const quickCallBox = document.getElementById("quick-call");

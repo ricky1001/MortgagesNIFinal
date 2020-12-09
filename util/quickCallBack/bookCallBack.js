@@ -1,6 +1,4 @@
-
-  
-  module.exports = {
+module.exports = {
 
     callBackStrings: function(){
         //create three time stamps for today tomorrow and the next day
