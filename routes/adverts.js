@@ -15,7 +15,7 @@ router.get("/mortgage-agreement-in-principle-ni", function(req, res){
 
 
 router.get("/agreement-in-principle-booking", function(req, res){
-
+   
     res.render("adverts/aip-booking",{
         metatitle: "Book your consultation",
         metadescription: "Get an agreement in principle / decision in principle for your mortgage in Northern Ireland. Find out which lenders will consider your application and who will offer you the best deal on the market",

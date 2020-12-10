@@ -36,6 +36,8 @@ router.get("/", function(req, res){
         if(err){
           console.log(err);
         }else{
+
+          
           var filteredRate = Rate.aggregate([
             {$sort : {rate: 1}}])
             .then(function(filteredRate){
