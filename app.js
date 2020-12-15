@@ -44,7 +44,7 @@ var calculatorRoutes         = require("./routes/calculators");
 var latestRatesRoutes        = require("./routes/latestRates");
 var bestBuys                 = require("./routes/best-Buys");
 var adverts                  = require("./routes/adverts");
-var test                  = require("./routes/test");
+var test                     = require("./routes/test");
 
 
 //Trying to add Quick Call Back Logic to all routes

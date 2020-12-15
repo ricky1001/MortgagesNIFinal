@@ -9,6 +9,14 @@ router.get("/testing-sliding-sidebar", function(req, res){
         });  
 });
 
+router.get("/testing-nav", function(req, res){
+    res.render("test/testing-nav-main",{
+        metatitle: "New Nav Test",
+        metadescription: "New Nav Test",
+        quickCallHelpers: req.quickCallHelpers
+    });  
+});
+
 
 
 
