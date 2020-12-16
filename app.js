@@ -16,6 +16,12 @@ var nodemailer = require("nodemailer");
 var callBackStrings = require("./util/quickCallBack/bookCallBack")
 var adjustedTimes = require("./util/quickCallBack/adjustedTimes")
 
+//URL string to connect to mongodb Atlas start
+const databaseConnect = 'mongodb+srv://ricky1001:Astron!23@mortgageadviserni.gcolq.mongodb.net/mortgageadviserni?retryWrites=true&w=majority';
+//URL string to connect to mongodb Atlas finish
+
+
+
 /*
 //add latest Rates
 var seedDB = require("./seed");
@@ -85,6 +91,12 @@ app.use(express.static("public"));
 app.use(methodOverride("_method"));
 app.use(passport.initialize());
 app.use(passport.session());
+
+//new code to connect to Atlas start
+//App Configuration
+mongoose.connect(databaseConnect);
+//new code to connect to Atlas finish
+
 
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
@@ -191,5 +203,24 @@ app.listen(3000, function(){
 });
 */
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+//New code removed connect to Mongodb atlas start
+// const PORT = process.env.PORT || 5000;
+// app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+//New code removed connect to Mongodb atlas finish
+
+
+//New code to connect to Mongodb atlas start
+const http = require('http').createServer(app);
+
+const PORT = process.env.databaseConnect || 5000;
+mongoose.connect(databaseConnect, { useFindAndModify: false })
+.then(result => {
+  
+  http.listen(PORT, () => {
+    console.log('listening on 5000')
+});
+
+}).catch(err => {
+  console.log(err);
+})
+//New code to connect to Mongodb atlas Finish
