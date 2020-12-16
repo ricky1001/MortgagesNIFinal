@@ -85,8 +85,8 @@ app.use(require("express-session")({
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
-//mongoose.connect("mongodb://localhost/MortgageRates");
-mongoose.connect("mongodb://ricky1001:Astron!23@ds113136.mlab.com:13136/mortgageadviserni");
+// //mongoose.connect("mongodb://localhost/MortgageRates");
+// mongoose.connect("mongodb://ricky1001:Astron!23@ds113136.mlab.com:13136/mortgageadviserni");
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
 app.use(passport.initialize());
@@ -213,7 +213,7 @@ app.listen(3000, function(){
 const http = require('http').createServer(app);
 
 const PORT = process.env.databaseConnect || 5000;
-mongoose.connect(databaseConnect, { useFindAndModify: false })
+mongoose.connect(databaseConnect, { useFindAndModify: false, useNewUrlParser: true })
 .then(result => {
   
   http.listen(PORT, () => {
