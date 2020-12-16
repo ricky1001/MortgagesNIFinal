@@ -11,6 +11,8 @@ var passport = require("passport");
 var LocalStrategy = require("passport-local");
 var passportLocalMongoose = require("passport-local-mongoose");
 var nodemailer = require("nodemailer");
+//Required for server
+const http = require('http').createServer(app);
 
 //Calling Util folders to supply quick call logic
 var callBackStrings = require("./util/quickCallBack/bookCallBack")
@@ -19,15 +21,6 @@ var adjustedTimes = require("./util/quickCallBack/adjustedTimes")
 //URL string to connect to mongodb Atlas start
 const databaseConnect = 'mongodb+srv://ricky1001:Astron!23@mortgageadviserni.gcolq.mongodb.net/mortgageadviserni?retryWrites=true&w=majority';
 //URL string to connect to mongodb Atlas finish
-
-
-
-/*
-//add latest Rates
-var seedDB = require("./seed");
-
-seedDB();
-*/
 
 
 //Model Schemas
@@ -85,6 +78,10 @@ app.use(require("express-session")({
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
+//new code to connect to Atlas start
+//App Configuration
+mongoose.connect(databaseConnect);
+//new code to connect to Atlas finish
 // //mongoose.connect("mongodb://localhost/MortgageRates");
 // mongoose.connect("mongodb://ricky1001:Astron!23@ds113136.mlab.com:13136/mortgageadviserni");
 app.use(express.static("public"));
@@ -92,10 +89,7 @@ app.use(methodOverride("_method"));
 app.use(passport.initialize());
 app.use(passport.session());
 
-//new code to connect to Atlas start
-//App Configuration
-mongoose.connect(databaseConnect);
-//new code to connect to Atlas finish
+
 
 
 passport.use(new LocalStrategy(User.authenticate()));
@@ -210,10 +204,11 @@ app.listen(3000, function(){
 
 
 //New code to connect to Mongodb atlas start
-const http = require('http').createServer(app);
+
 
 const PORT = process.env.databaseConnect || 5000;
-mongoose.connect(databaseConnect, { useFindAndModify: false, useNewUrlParser: true })
+
+mongoose.connect(databaseConnect, { useFindAndModify: false})
 .then(result => {
   
   http.listen(PORT, () => {
