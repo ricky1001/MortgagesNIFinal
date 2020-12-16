@@ -198,24 +198,24 @@ app.listen(3000, function(){
 */
 
 //New code removed connect to Mongodb atlas start
-// const PORT = process.env.PORT || 5000;
-// app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
 //New code removed connect to Mongodb atlas finish
 
 
 //New code to connect to Mongodb atlas start
 
 
-const PORT = process.env.databaseConnect || 5000;
+// const PORT = process.env.databaseConnect || 5000;
 
-mongoose.connect(databaseConnect, { useFindAndModify: false})
-.then(result => {
+// mongoose.connect(databaseConnect, { useFindAndModify: false})
+// .then(result => {
   
-  http.listen(PORT, () => {
-    console.log('listening on 5000')
-});
+//   http.listen(PORT, () => {
+//     console.log('listening on 5000')
+// });
 
-}).catch(err => {
-  console.log(err);
-})
+// }).catch(err => {
+//   console.log(err);
+// })
 //New code to connect to Mongodb atlas Finish
