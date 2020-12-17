@@ -6,7 +6,8 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss public/css/style.css -w",
     "start": "node app.js",
-    "live": "nodemon server.js"
+    "live": "nodemon server.js",
+    "build": "babel public/js/src -d public/js/dist"
   },
   "author": "Richard Aston",
   "license": "ISC",
@@ -26,6 +27,8 @@
     "passport-local-mongoose": "^5.0.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
     "node-sass": "^4.13.0"
   }
 }
