@@ -8834,18 +8834,27 @@ p {
       color: white;
       display: inline-block;
       padding-left: 4rem; }
+      @media only screen and (max-width: 450px) {
+        .menu-topic-listener h6 {
+          padding-left: 2rem; } }
     .menu-topic-listener span {
       color: orange;
       float: right;
-      padding-right: 6rem; }
+      padding-right: 4rem; }
+      @media only screen and (max-width: 450px) {
+        .menu-topic-listener span {
+          padding-right: 2rem; } }
   .menu-topic-sub {
     padding-left: 4rem;
     background-color: #9f31e8;
     padding-bottom: 1rem; }
+    @media only screen and (max-width: 450px) {
+      .menu-topic-sub {
+        padding-left: 2rem; } }
     .menu-topic-sub h6 {
       font-size: 1.2rem;
       padding: .8rem 0 .4rem 0;
-      color: white; }
+      color: #7AE831; }
     .menu-topic-sub ul {
       list-style: none;
       padding-left: 0rem;
