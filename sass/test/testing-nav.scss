@@ -9,7 +9,7 @@
     &-top{
         width: 100vw;
         height: 2rem;
-        background-color: $primary-purple;
+        background-color: $mono;
 
         & ul{
             list-style: none;
@@ -35,20 +35,20 @@
 
     &-mid{
         position: relative;
-        background-color: $vibrant-purple;
+        background-color: $primary;
         height: 8rem;
         padding: 1vw 1vw 1vw 1vw;
 
         &-inner{
             width: 100%;
             height: 100%;
-            background-color: $vibrant-purple;;
+            // background-color: $vibrant-purple;;
 
             &-left{
                 display: inline-block;
                 width: 59.9%;
                 height: 100%;
-                background-color:$vibrant-purple;;
+                // background-color:$vibrant-purple;;
 
                 & img{
                     width: 35%;
@@ -74,14 +74,14 @@
                 display: inline-block;
                 width: 39.9%;
                 height: 100%;
-                background-color: $vibrant-purple;
+                background-color: $primary;
                 float: right;
                 padding: .6rem;
 
                 &-contact{
                     width: 100%;
                     height: 100%;
-                    background-color: #5c1c87;
+                    background-color:$tertiary-tet;
                     border-radius: 5px;
                     padding: .1rem;
 
@@ -111,12 +111,14 @@
     }
 
     &-bottom{
+//For testing purposes only to create space between the footer and the header
+        margin-bottom: 10rem;
 
         & ul{
             list-style: none; 
             padding-left: 0px;
             margin-bottom: 0px;
-            background-color: $primary-purple;
+            background-color: $mono;
             height: 2.5rem;
 
             & li{
@@ -252,8 +254,12 @@
         top: 50%;
         transform: translateY(-50%);
         margin-right: 2rem;
-        color: orange;
         float: right;
+
+        & a{
+            text-decoration: none;
+            color: white;
+        }
 
         @media only screen and (max-width: 450px) {
             margin-right: 1rem;
@@ -320,7 +326,7 @@
     &-contact-box{
         @media only screen and (min-width: 900px) {display: none;}
         width: 100%;
-        background-color: $primary-purple;
+        background-color: $mono;
         height: 3rem;
         text-align: center;
         font-size: 2.2rem;
@@ -344,7 +350,7 @@
 
 
 .menu-topic{
-    background-color: $primary-purple-dark;
+    background-color: $tertiary-tet;
 
     &-listener{
         padding: .4rem;
@@ -375,7 +381,7 @@
 
     &-sub{
         padding-left: 4rem;
-        background-color: $primary-purple;;
+        background-color: $mono;
         padding-bottom: 1rem;
 
         @media only screen and (max-width: 450px) {
@@ -386,7 +392,7 @@
         & h6{
             font-size: 1.2rem;
             padding:.8rem 0 .4rem 0;
-            color: $green-primary;
+            color: orange;
         }
 
 
@@ -412,7 +418,7 @@
                 }
 
                 & i{
-                    color: $green-primary;
+                    color: orange;
                     padding-left: .8rem;
                 }
             }
