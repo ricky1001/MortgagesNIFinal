@@ -410,6 +410,11 @@
                     color: orange;
                   }
                 }
+
+                & i{
+                    color: $green-primary;
+                    padding-left: .8rem;
+                }
             }
         }
     }

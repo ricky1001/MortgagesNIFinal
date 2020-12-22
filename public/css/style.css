@@ -8869,3 +8869,6 @@ p {
           transition-duration: .3s; }
           .menu-topic-sub ul li a:hover {
             color: orange; }
+        .menu-topic-sub ul li i {
+          color: #7AE831;
+          padding-left: .8rem; }
