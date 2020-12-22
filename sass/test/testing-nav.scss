@@ -23,11 +23,17 @@
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
-                transition-property: color;
-                transition-duration: .3s;
 
-                &:hover{
-                    color: $tertiary-orange;
+
+                & a{
+                    color:white;
+                    text-decoration: none;
+                    transition-property: color;
+                    transition-duration: .3s;
+
+                    &:hover{
+                        color: $tertiary-orange;
+                    }
                 }
             }
         }
@@ -51,7 +57,7 @@
                 // background-color:$vibrant-purple;;
 
                 & img{
-                    width: 35%;
+                    width: 45%;
                     margin-left: 8rem;
                     height: 85%;
                     position: relative;
@@ -78,10 +84,11 @@
                 float: right;
                 padding: .6rem;
 
+
                 &-contact{
                     width: 100%;
                     height: 100%;
-                    background-color:$tertiary-tet;
+                    background-color:$mono;
                     border-radius: 5px;
                     padding: .1rem;
 
@@ -332,6 +339,11 @@
         font-size: 2.2rem;
         color: white;
 
+        & a{
+            color: white;
+            text-decoration: none;
+        }
+
         @media only screen and (max-width: 400px) {
             height: 2rem;
             font-size: 1.4rem;
@@ -348,9 +360,12 @@
 
 }
 
-
+//The collapsing menu is used for both variation above
 .menu-topic{
     background-color: $tertiary-tet;
+    width: 100%;
+
+
 
     &-listener{
         padding: .4rem;
@@ -358,7 +373,7 @@
         & h6{
             color: white;
             display: inline-block;
-            padding-left: 4rem;
+            padding-left: 8rem;
 
             @media only screen and (max-width: 450px) {
                 padding-left: 2rem;
@@ -370,7 +385,7 @@
         & span{
             color: orange;
             float: right;
-            padding-right: 4rem;
+            padding-right: 8rem;
             @media only screen and (max-width: 450px) {
                 padding-right: 2rem;
 
@@ -380,7 +395,7 @@
 
 
     &-sub{
-        padding-left: 4rem;
+        padding-left: 8rem;
         background-color: $mono;
         padding-bottom: 1rem;
 
@@ -419,7 +434,7 @@
 
                 & i{
                     color: orange;
-                    padding-left: .8rem;
+                    padding-left: .2rem;
                 }
             }
         }
