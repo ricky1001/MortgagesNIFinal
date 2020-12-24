@@ -84,7 +84,7 @@ hoursPastNine = Math.floor(hoursPastNine);
 var adjustedTimes = new Array();
 if(nowToday < nineAMToday){
    adjustedTimes = times;
-}else if(nowToday > eightPMToday){
+}else if(nowToday >= eightPMToday){
    adjustedTimes = ["There are no more available times today please select another day"]
 }else{
     adjustedTimes = times.splice(hoursPastNine, times.length);     
