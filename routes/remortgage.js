@@ -10,12 +10,14 @@ router.get("/re-mortgage-advice", function(req, res){
     if(err){
       console.log(err)
     } else{
+      const testDate = new Date();
       res.render("./remortgage/re-mortgage-advice", 
                                                 {
                                                  rmPost: rmPost,
                                                  metatitle: "Fee Free re-mortgage Advice in Northern Ireland",
                                                  metadescription: "Our mortgage brokers have access to all the latest re-mortgage Northern Ireland deals. Mortgages Northern Ireland can help with any remortgage enquiries that you may have.",
-                                                 quickCallHelpers: req.quickCallHelpers
+                                                 quickCallHelpers: req.quickCallHelpers,
+                                                 testDate: testDate
                                                  });
     }
   })
