@@ -7,6 +7,7 @@ const quickCallBox = document.getElementById("quick-call");
 
 //Listens for a click on the Phone Icon and expands the div 
 quickCallIcon.addEventListener("click", function(e){
+    console.log("click")
     if(quickCallBox.className === "quick-call-down"){  
         quickCallBox.className = "quick-call-up";
 
