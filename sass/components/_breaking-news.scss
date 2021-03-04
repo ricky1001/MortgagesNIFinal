@@ -30,7 +30,8 @@
   }
   
   .breaking-news-title {
-    background-color: #FFEA00;
+    background-color: $tertiary-orange-logo;
+    color: white;
     display: block;
     height: 100%;  
     width: 90px;
@@ -53,7 +54,7 @@
       left: -12px;
       border-left:12px solid transparent;
       border-right: 0px solid transparent;
-      border-bottom: 30px solid #FFEA00;
+      border-bottom: 30px solid $tertiary-orange-logo;
     }
     &:after {
       content:"";
@@ -65,26 +66,27 @@
       top: 0;
       border-right:12px solid transparent;
       border-left: 0px solid transparent;
-      border-top: 30px solid #FFEA00;
+      border-top: 30px solid $tertiary-orange-logo;
     }
   }
   
   #breaking-news-colour {
     height: 30px;
     width: 100%;
-    background-color: #3399FF;
+    background-color: $primary-purple-light-test;
   }
   
   #breaking-news-container {
     height: 30px;
-    width: 95%;
+    width: 100%;
     overflow: hidden;
-    position: absolute;
+    margin-top: 1rem;
+    position: relative;
     &:before {
       content: "";
       width: 30px;
       height: 30px;
-      background-color: #3399FF;
+      background-color: $primary-purple-light-test;
       position: absolute;
       z-index: 2;
     }

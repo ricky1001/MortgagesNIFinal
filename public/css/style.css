@@ -7439,7 +7439,8 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 150px; }
 
 .breaking-news-title {
-  background-color: #FFEA00;
+  background-color: #ff7f27;
+  color: white;
   display: block;
   height: 100%;
   width: 90px;
@@ -7462,7 +7463,7 @@ a.text-dark:hover, a.text-dark:focus {
     left: -12px;
     border-left: 12px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 30px solid #FFEA00; }
+    border-bottom: 30px solid #ff7f27; }
   .breaking-news-title:after {
     content: "";
     position: absolute;
@@ -7473,23 +7474,24 @@ a.text-dark:hover, a.text-dark:focus {
     top: 0;
     border-right: 12px solid transparent;
     border-left: 0px solid transparent;
-    border-top: 30px solid #FFEA00; }
+    border-top: 30px solid #ff7f27; }
 
 #breaking-news-colour {
   height: 30px;
   width: 100%;
-  background-color: #3399FF; }
+  background-color: #4d1a72; }
 
 #breaking-news-container {
   height: 30px;
-  width: 95%;
+  width: 100%;
   overflow: hidden;
-  position: absolute; }
+  margin-top: 1rem;
+  position: relative; }
   #breaking-news-container:before {
     content: "";
     width: 30px;
     height: 30px;
-    background-color: #3399FF;
+    background-color: #4d1a72;
     position: absolute;
     z-index: 2; }
   #breaking-news-container a {
