@@ -46,7 +46,7 @@ router.post("/mortgage-news-post", function(req, res){
       console.log("Error")
     }else{
       newmnPost.save();
-      res.redirect("/mortgage-news");
+      res.redirect("/mortgage-news/" + req.body.mortgageNews._id);
     }
   })
   //Redirect to the Index Route
