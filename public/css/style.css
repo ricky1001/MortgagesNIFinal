@@ -7423,6 +7423,9 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   margin-top: 1rem;
   display: table; }
+  @media (max-width: 395px) {
+    .breaking-news-container {
+      display: none; } }
   .breaking-news a {
     position: relative;
     color: white;
@@ -7611,6 +7614,10 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 30px; }
   to {
     margin-top: 0; } }
+
+@media (max-width: 500px) {
+  #breadcrumb {
+    display: none; } }
 
 @media only screen and (max-width: 1250px) {
   .menu {

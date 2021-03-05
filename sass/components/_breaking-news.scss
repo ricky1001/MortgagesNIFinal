@@ -1,5 +1,12 @@
 .breaking-news{
 
+  &-container{
+
+    @media (max-width: 395px) {
+      display: none;
+      }  
+    }
+
     width: 100%;
     background-color: green;
     height: 3rem;
