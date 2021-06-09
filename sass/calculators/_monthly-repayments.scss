@@ -34,8 +34,13 @@
             font-weight: 700;
         }
     }
-
-    
+    &-s{
+        text-align: center;
+        font-size: .8rem;
+        font-weight: 400;
+        color: $color-white;
+    }
+   
 }
 
 .monthly-payment-info{

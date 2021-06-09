@@ -8864,6 +8864,11 @@ p {
       text-align: center;
       font-size: 3rem;
       font-weight: 700; }
+  .MRresultShow-s {
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 400;
+    color: #ffffff; }
 
 .monthly-payment-info {
   margin-top: 2rem; }
