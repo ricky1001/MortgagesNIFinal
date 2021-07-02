@@ -156,10 +156,11 @@
     }
 }
 
+
 .sm{
 
     &-menu{
-        z-index:700000000001;
+        z-index:9999;
         position: relative;
         height: 8rem;
         background-color: $vibrant-purple;
@@ -259,7 +260,7 @@
     background-color: $vibrant-purple;
     height: 6rem;
     @media only screen and (min-width: 900px) {display: none;};
-    z-index:700000000000;
+    z-index:9999;
 
     @media only screen and (max-width: 360px) {
         height: 5rem;
@@ -349,7 +350,8 @@
         text-align: center;
         font-size: 2.2rem;
         color: white;
-        z-index:1000000000;
+        z-index:9999;
+        
 
         position: -webkit-sticky; /* Safari */
         position: sticky;

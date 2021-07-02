@@ -7722,7 +7722,7 @@ a.text-dark:hover, a.text-dark:focus {
       padding-left: 1rem; }
 
 .sm-menu {
-  z-index: 700000000001;
+  z-index: 9999;
   position: relative;
   height: 8rem;
   background-color: #4b0082; }
@@ -7794,7 +7794,7 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   background-color: #4b0082;
   height: 6rem;
-  z-index: 700000000000; }
+  z-index: 9999; }
   @media only screen and (min-width: 900px) {
     .sm-900-below-menu {
       display: none; } }
@@ -7862,7 +7862,7 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center;
     font-size: 2.2rem;
     color: white;
-    z-index: 1000000000;
+    z-index: 9999;
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
